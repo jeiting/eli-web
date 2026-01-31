@@ -334,6 +334,7 @@ p {
   background: linear-gradient(120deg, rgba(255, 41, 117, 0.15), transparent 55%);
   opacity: 0;
   transition: opacity 0.2s ease;
+  pointer-events: none;
 }
 
 .skill-card:hover {
