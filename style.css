@@ -164,6 +164,34 @@ nav.site-nav {
   text-shadow: var(--glow-amber);
 }
 
+.nav-sub {
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgba(231, 249, 255, 0.7);
+}
+
+.nav-sub a {
+  color: var(--cyan);
+  text-decoration: none;
+  text-shadow: var(--glow-cyan);
+  transition: color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.nav-sub a:hover,
+.nav-sub a:focus {
+  color: var(--pink);
+  text-shadow: var(--glow-pink);
+  outline: none;
+}
+
+.nav-sub .nav-divider {
+  color: rgba(231, 249, 255, 0.55);
+}
+
 main {
   position: relative;
   z-index: 1;
@@ -417,6 +445,13 @@ p {
   color: var(--pink);
   text-shadow: var(--glow-pink);
   font-size: 1.05rem;
+}
+
+.arcade-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 16px;
 }
 
 .arcade-preview {
