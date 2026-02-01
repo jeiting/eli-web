@@ -501,6 +501,132 @@ p {
   mix-blend-mode: screen;
 }
 
+.arcade-hub {
+  padding-top: 140px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+.arcade-hub-header p {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.arcade-select {
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+}
+
+.arcade-game-card {
+  text-align: left;
+  padding: 26px;
+  border-radius: 22px;
+  background: rgba(7, 0, 19, 0.78);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  box-shadow: var(--glow-cyan);
+  position: relative;
+  overflow: hidden;
+}
+
+.arcade-game-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.arcade-game-preview {
+  position: relative;
+  height: 120px;
+  border-radius: 16px;
+  margin-bottom: 18px;
+  border: 1px solid rgba(0, 240, 255, 0.35);
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  background: radial-gradient(circle at 20% 30%, rgba(0, 240, 255, 0.25), transparent 60%),
+              radial-gradient(circle at 80% 20%, rgba(255, 41, 117, 0.2), transparent 55%),
+              linear-gradient(150deg, rgba(5, 0, 16, 0.85), rgba(13, 2, 33, 0.95));
+}
+
+.arcade-game-label {
+  font-family: "Press Start 2P", "Share Tech Mono", monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  z-index: 1;
+}
+
+.arcade-game-grid {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 240, 255, 0.14) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 41, 117, 0.12) 1px, transparent 1px);
+  background-size: 24px 24px;
+  opacity: 0.5;
+  mix-blend-mode: screen;
+}
+
+.arcade-game-card.asteroids {
+  border-color: rgba(247, 167, 27, 0.35);
+  box-shadow: var(--glow-amber);
+}
+
+.arcade-game-card.asteroids .arcade-game-preview {
+  border-color: rgba(247, 167, 27, 0.6);
+  box-shadow: var(--glow-amber);
+  background: radial-gradient(circle at 20% 30%, rgba(247, 167, 27, 0.25), transparent 60%),
+              radial-gradient(circle at 75% 25%, rgba(255, 41, 117, 0.18), transparent 55%),
+              linear-gradient(150deg, rgba(5, 0, 16, 0.85), rgba(13, 2, 33, 0.95));
+}
+
+.arcade-game-card.asteroids .arcade-game-label {
+  color: var(--amber);
+  text-shadow: var(--glow-amber);
+}
+
+.arcade-play {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+  padding: 10px 16px;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 240, 255, 0.55);
+  color: var(--cyan);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  background: rgba(13, 2, 33, 0.8);
+  box-shadow: var(--glow-cyan);
+  transition: color 0.2s ease, border-color 0.2s ease, text-shadow 0.2s ease;
+}
+
+.arcade-play:hover,
+.arcade-play:focus {
+  color: var(--pink);
+  border-color: rgba(255, 41, 117, 0.6);
+  text-shadow: var(--glow-pink);
+  outline: none;
+}
+
+.arcade-game-card.asteroids .arcade-play {
+  color: var(--amber);
+  border-color: rgba(247, 167, 27, 0.6);
+  text-shadow: var(--glow-amber);
+  box-shadow: var(--glow-amber);
+}
+
+.arcade-game-card.asteroids .arcade-play:hover,
+.arcade-game-card.asteroids .arcade-play:focus {
+  color: var(--pink);
+  border-color: rgba(255, 41, 117, 0.6);
+  text-shadow: var(--glow-pink);
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
