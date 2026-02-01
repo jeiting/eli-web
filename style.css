@@ -395,6 +395,77 @@ p {
   position: relative;
 }
 
+.arcade-section {
+  padding-top: 80px;
+}
+
+.arcade-card {
+  max-width: 980px;
+  margin: 0 auto;
+  display: grid;
+  gap: 28px;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  align-items: center;
+  background: rgba(7, 0, 19, 0.7);
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  border-radius: 24px;
+  padding: 32px;
+  box-shadow: var(--glow-cyan);
+}
+
+.arcade-tagline {
+  color: var(--pink);
+  text-shadow: var(--glow-pink);
+  font-size: 1.05rem;
+}
+
+.arcade-preview {
+  position: relative;
+  min-height: 180px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 41, 117, 0.35);
+  background: radial-gradient(circle at 20% 20%, rgba(255, 41, 117, 0.25), transparent 55%),
+              radial-gradient(circle at 80% 20%, rgba(0, 240, 255, 0.18), transparent 55%),
+              linear-gradient(150deg, rgba(5, 0, 16, 0.8), rgba(13, 2, 33, 0.9));
+  box-shadow: var(--glow-pink);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+.arcade-chip {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid rgba(247, 167, 27, 0.6);
+  color: var(--amber);
+  text-shadow: var(--glow-amber);
+  background: rgba(13, 2, 33, 0.7);
+}
+
+.arcade-glow {
+  font-family: "Press Start 2P", "Share Tech Mono", monospace;
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: var(--cyan);
+  text-shadow: var(--glow-cyan);
+  z-index: 1;
+}
+
+.arcade-grid {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(rgba(0, 240, 255, 0.1) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(255, 41, 117, 0.1) 1px, transparent 1px);
+  background-size: 28px 28px;
+  opacity: 0.45;
+  mix-blend-mode: screen;
+}
+
 .blog-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
