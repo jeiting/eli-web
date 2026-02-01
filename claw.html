@@ -1,0 +1,1062 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Eli's Arcade: a neon claw machine packed with emoji prizes." />
+  <meta property="og:title" content="Eli's Arcade — Claw Master" />
+  <meta property="og:description" content="Grab adorable emoji prizes in a synthwave claw machine." />
+  <meta property="og:image" content="images/hero.png" />
+  <meta property="og:type" content="website" />
+  <meta name="theme-color" content="#0d0221" />
+  <title>Eli's Arcade — Claw Master</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+  <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .arcade-hero {
+      padding-top: 140px;
+      padding-bottom: 60px;
+      text-align: center;
+    }
+
+    .arcade-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      color: var(--pink);
+      text-shadow: var(--glow-pink);
+      margin-bottom: 18px;
+    }
+
+    .claw-shell {
+      width: min(920px, 94vw);
+      margin: 0 auto;
+      padding: 28px;
+      border-radius: 26px;
+      background: rgba(6, 0, 18, 0.85);
+      border: 1px solid rgba(0, 240, 255, 0.25);
+      box-shadow: var(--glow-cyan);
+      position: relative;
+    }
+
+    .claw-sign {
+      font-family: "Press Start 2P", "Share Tech Mono", monospace;
+      font-size: clamp(1.1rem, 3vw, 1.6rem);
+      color: var(--cyan);
+      text-shadow: var(--glow-cyan);
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      animation: signPulse 3s ease-in-out infinite;
+    }
+
+    @keyframes signPulse {
+      0%, 100% { text-shadow: 0 0 12px rgba(0, 240, 255, 0.6), 0 0 24px rgba(255, 41, 117, 0.35); }
+      50% { text-shadow: 0 0 18px rgba(255, 41, 117, 0.8), 0 0 32px rgba(0, 240, 255, 0.4); }
+    }
+
+    .claw-cabinet {
+      position: relative;
+      width: 100%;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 41, 117, 0.4);
+      box-shadow: var(--glow-pink);
+      background: #0d0221;
+    }
+
+    canvas#clawCanvas {
+      width: 100%;
+      height: auto;
+      display: block;
+      background: radial-gradient(circle at 20% 20%, rgba(0, 240, 255, 0.15), transparent 45%),
+                  radial-gradient(circle at 80% 10%, rgba(255, 41, 117, 0.18), transparent 45%),
+                  #0d0221;
+    }
+
+    .scanlines {
+      pointer-events: none;
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.04),
+        rgba(255, 255, 255, 0.04) 1px,
+        transparent 1px,
+        transparent 3px
+      );
+      mix-blend-mode: screen;
+      opacity: 0.45;
+    }
+
+    .mute-button {
+      position: absolute;
+      top: 16px;
+      right: 16px;
+      z-index: 3;
+      background: rgba(13, 2, 33, 0.75);
+      border: 1px solid rgba(0, 240, 255, 0.4);
+      color: var(--cyan);
+      font-family: "Share Tech Mono", monospace;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      padding: 8px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      box-shadow: var(--glow-cyan);
+    }
+
+    .mute-button:hover,
+    .mute-button:focus {
+      color: var(--pink);
+      border-color: rgba(255, 41, 117, 0.5);
+      box-shadow: var(--glow-pink);
+      outline: none;
+    }
+
+    .status-message {
+      margin-top: 18px;
+      text-align: center;
+      font-family: "Press Start 2P", "Share Tech Mono", monospace;
+      font-size: 0.8rem;
+      color: var(--amber);
+      text-shadow: var(--glow-amber);
+      min-height: 1.4rem;
+    }
+
+    .arcade-instructions {
+      margin-top: 14px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: rgba(231, 249, 255, 0.85);
+    }
+
+    .arcade-instructions span {
+      color: var(--cyan);
+      text-shadow: var(--glow-cyan);
+    }
+
+    .touch-hint {
+      margin-top: 12px;
+      text-align: center;
+      font-size: 0.78rem;
+      color: rgba(231, 249, 255, 0.7);
+      display: none;
+    }
+
+    .prize-collection {
+      margin-top: 26px;
+      padding-top: 18px;
+      border-top: 1px solid rgba(0, 240, 255, 0.2);
+    }
+
+    .collection-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .collection-header h2 {
+      font-size: 0.95rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--cyan);
+      text-shadow: var(--glow-cyan);
+    }
+
+    .reset-button {
+      border-radius: 999px;
+      padding: 8px 14px;
+      border: 1px solid rgba(255, 41, 117, 0.5);
+      background: rgba(13, 2, 33, 0.8);
+      color: var(--pink);
+      font-family: "Share Tech Mono", monospace;
+      text-transform: uppercase;
+      font-size: 0.7rem;
+      letter-spacing: 0.12em;
+      cursor: pointer;
+      box-shadow: var(--glow-pink);
+    }
+
+    .reset-button:hover,
+    .reset-button:focus {
+      color: var(--cyan);
+      border-color: rgba(0, 240, 255, 0.6);
+      box-shadow: var(--glow-cyan);
+      outline: none;
+    }
+
+    .collection-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      min-height: 48px;
+      padding: 12px 0;
+    }
+
+    .prize-emoji {
+      font-size: 2rem;
+      filter: drop-shadow(0 0 8px rgba(255, 255, 255, 0.25));
+      animation: prizePop 0.45s ease;
+    }
+
+    @keyframes prizePop {
+      0% { transform: translateY(12px) scale(0.6); opacity: 0; }
+      70% { transform: translateY(-4px) scale(1.05); opacity: 1; }
+      100% { transform: translateY(0) scale(1); }
+    }
+
+    .collection-counts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      font-family: "Share Tech Mono", monospace;
+      font-size: 0.85rem;
+      color: rgba(231, 249, 255, 0.85);
+    }
+
+    .count-chip {
+      padding: 6px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(0, 240, 255, 0.3);
+      background: rgba(6, 0, 18, 0.55);
+      box-shadow: var(--glow-cyan);
+    }
+
+    @media (max-width: 720px) {
+      .arcade-hero {
+        padding-top: 120px;
+      }
+
+      .status-message {
+        font-size: 0.7rem;
+      }
+
+      .touch-hint {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="site-nav" aria-label="Primary navigation">
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <span class="nav-divider">|</span>
+      <a href="blog.html">Blog</a>
+      <span class="nav-divider">|</span>
+      <a href="arcade.html">Arcade</a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="arcade-hero">
+      <h1>CLAW MASTER</h1>
+      <p>Guide the claw, scoop a prize, and build your emoji treasure tower.</p>
+
+      <div class="claw-shell">
+        <div class="claw-sign">🏆 CLAW MASTER 🏆</div>
+
+        <div class="claw-cabinet">
+          <button class="mute-button" id="muteButton" type="button">Sound: On</button>
+          <canvas id="clawCanvas" width="520" height="680" aria-label="Claw machine game"></canvas>
+          <div class="scanlines"></div>
+        </div>
+
+        <div class="status-message" id="statusMessage">Ready to grab!</div>
+        <div class="arcade-instructions">← → / A-D to move <span>|</span> SPACE / ↓ to drop <span>|</span> Collect them all!</div>
+        <div class="touch-hint">Tap left/right to move • Tap center/bottom to drop</div>
+
+        <div class="prize-collection">
+          <div class="collection-header">
+            <h2 id="collectionHeader">Your Prizes (0)</h2>
+            <button class="reset-button" id="resetCollection" type="button">New Game</button>
+          </div>
+          <div class="collection-row" id="collectionRow"></div>
+          <div class="collection-counts" id="collectionCounts"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    Built by Eli 💾 | Powered by <a href="https://github.com/openclaw/openclaw" target="_blank" rel="noopener">OpenClaw 🦞</a> | Running on Claude by Anthropic | <a href="https://docs.openclaw.ai" target="_blank" rel="noopener">OpenClaw Docs</a>
+  </footer>
+
+  <script>
+    (() => {
+      const canvas = document.getElementById("clawCanvas");
+      const ctx = canvas.getContext("2d");
+      const muteButton = document.getElementById("muteButton");
+      const statusMessage = document.getElementById("statusMessage");
+      const collectionRow = document.getElementById("collectionRow");
+      const collectionHeader = document.getElementById("collectionHeader");
+      const collectionCounts = document.getElementById("collectionCounts");
+      const resetButton = document.getElementById("resetCollection");
+
+      const allPrizes = ["🧸", "🦄", "🐱", "🐶", "🌈", "⭐", "🍭", "🎀", "🦋", "🍦", "🌸", "🐰", "🎪", "🐢", "🦊", "🐼", "🎠", "🍩", "🪐", "🎵"];
+      const rarePrizes = new Set(["🪐", "🎠", "🎵"]);
+      const prizeState = {
+        prizes: [],
+        carried: null,
+        dropPrize: null,
+      };
+
+      const state = {
+        phase: "aim",
+        clawX: 0,
+        clawY: 0,
+        clawOpen: 1,
+        swing: 0,
+        swingSpeed: 0.0022,
+        inputLeft: false,
+        inputRight: false,
+        lastMessage: "",
+        messageTimer: 0,
+        dropTimer: 0,
+        grabTimer: 0,
+        grabTarget: null,
+        slipChecked: false,
+        lastSparkle: 0,
+        confettiRain: 0,
+      };
+
+      const layout = {
+        w: 0,
+        h: 0,
+        frame: null,
+        glass: null,
+        pit: null,
+        clawTop: 0,
+        clawMinX: 0,
+        clawMaxX: 0,
+        chuteX: 0,
+        chuteY: 0,
+      };
+
+      const input = {
+        dropRequested: false,
+      };
+
+      const particles = [];
+      const sparkles = [];
+
+      const messages = {
+        win: ["Nice grab! 🎉", "You got it! ⭐", "Prize time! 🏆"],
+        miss: ["So close! Try again! 💪", "Almost! You can do it! ✨", "Keep going! 🌈"],
+        slip: ["Aww, it slipped! 🎈", "Oops! Try again! 💫", "So close! 💖"],
+      };
+
+      const sound = {
+        context: null,
+        master: null,
+        muted: false,
+        ambience: null,
+        init() {
+          if (this.context) return;
+          this.context = new (window.AudioContext || window.webkitAudioContext)();
+          this.master = this.context.createGain();
+          this.master.gain.value = 0.6;
+          this.master.connect(this.context.destination);
+        },
+        setMuted(isMuted) {
+          this.muted = isMuted;
+          muteButton.textContent = this.muted ? "Sound: Off" : "Sound: On";
+          if (this.master) {
+            this.master.gain.value = this.muted ? 0 : 0.6;
+          }
+        },
+        playTone({ frequency = 440, duration = 0.2, type = "sine", gain = 0.2, slide = 0 }) {
+          if (!this.context || this.muted) return;
+          const osc = this.context.createOscillator();
+          const g = this.context.createGain();
+          osc.type = type;
+          osc.frequency.setValueAtTime(frequency, this.context.currentTime);
+          if (slide) {
+            osc.frequency.linearRampToValueAtTime(slide, this.context.currentTime + duration);
+          }
+          g.gain.setValueAtTime(0.0001, this.context.currentTime);
+          g.gain.exponentialRampToValueAtTime(gain, this.context.currentTime + 0.02);
+          g.gain.exponentialRampToValueAtTime(0.0001, this.context.currentTime + duration);
+          osc.connect(g);
+          g.connect(this.master);
+          osc.start();
+          osc.stop(this.context.currentTime + duration + 0.05);
+        },
+        clunk() {
+          this.playTone({ frequency: 120, duration: 0.18, type: "square", gain: 0.25 });
+        },
+        grab() {
+          this.playTone({ frequency: 220, duration: 0.12, type: "triangle", gain: 0.22 });
+        },
+        win() {
+          this.playTone({ frequency: 440, duration: 0.18, type: "sine", gain: 0.25, slide: 720 });
+          this.playTone({ frequency: 620, duration: 0.2, type: "sine", gain: 0.2, slide: 880 });
+        },
+        slip() {
+          this.playTone({ frequency: 420, duration: 0.25, type: "sine", gain: 0.18, slide: 160 });
+        },
+        tick() {
+          this.playTone({ frequency: 300, duration: 0.06, type: "square", gain: 0.08 });
+        },
+        startAmbience() {
+          if (!this.context || this.ambience) return;
+          const osc = this.context.createOscillator();
+          const g = this.context.createGain();
+          osc.type = "sine";
+          osc.frequency.value = 60;
+          g.gain.value = 0.04;
+          osc.connect(g);
+          g.connect(this.master);
+          osc.start();
+          this.ambience = { osc, gain: g };
+        },
+      };
+
+      const collectionKey = "clawCollection";
+      let collection = loadCollection();
+
+      function loadCollection() {
+        try {
+          const stored = JSON.parse(localStorage.getItem(collectionKey));
+          return Array.isArray(stored) ? stored : [];
+        } catch (error) {
+          return [];
+        }
+      }
+
+      function saveCollection() {
+        localStorage.setItem(collectionKey, JSON.stringify(collection));
+      }
+
+      function updateCollectionUI() {
+        collectionHeader.textContent = `Your Prizes (${collection.length})`;
+        collectionRow.innerHTML = "";
+        collection.forEach((emoji) => {
+          const span = document.createElement("span");
+          span.className = "prize-emoji";
+          span.textContent = emoji;
+          collectionRow.appendChild(span);
+        });
+
+        const counts = collection.reduce((acc, emoji) => {
+          acc[emoji] = (acc[emoji] || 0) + 1;
+          return acc;
+        }, {});
+
+        collectionCounts.innerHTML = "";
+        Object.entries(counts).forEach(([emoji, count]) => {
+          const chip = document.createElement("div");
+          chip.className = "count-chip";
+          chip.textContent = `${emoji} × ${count}`;
+          collectionCounts.appendChild(chip);
+        });
+      }
+
+      function setMessage(text) {
+        statusMessage.textContent = text;
+        state.messageTimer = 2.2;
+      }
+
+      function pickMessage(type) {
+        const pool = messages[type] || messages.miss;
+        return pool[Math.floor(Math.random() * pool.length)];
+      }
+
+      function createPrize() {
+        const isRare = Math.random() < 0.18;
+        const options = isRare ? Array.from(rarePrizes) : allPrizes.filter((emoji) => !rarePrizes.has(emoji));
+        const emoji = options[Math.floor(Math.random() * options.length)];
+        return {
+          emoji,
+          x: 0.08 + Math.random() * 0.84,
+          y: 0.55 + Math.random() * 0.4,
+          rotation: (Math.random() - 0.5) * 0.8,
+          scale: 0.95 + Math.random() * 0.15,
+        };
+      }
+
+      function initPrizes() {
+        prizeState.prizes = [];
+        const total = 16;
+        for (let i = 0; i < total; i += 1) {
+          prizeState.prizes.push(createPrize());
+        }
+      }
+
+      function resizeCanvas() {
+        const dpr = window.devicePixelRatio || 1;
+        const width = canvas.clientWidth;
+        const height = Math.round(width * 1.3);
+        canvas.style.height = `${height}px`;
+        canvas.width = Math.round(width * dpr);
+        canvas.height = Math.round(height * dpr);
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        layout.w = width;
+        layout.h = height;
+        layout.frame = {
+          x: width * 0.08,
+          y: height * 0.06,
+          w: width * 0.84,
+          h: height * 0.88,
+        };
+        layout.glass = {
+          x: layout.frame.x + width * 0.03,
+          y: layout.frame.y + height * 0.03,
+          w: layout.frame.w - width * 0.06,
+          h: layout.frame.h - height * 0.06,
+        };
+        layout.pit = {
+          x: layout.glass.x + width * 0.05,
+          y: layout.glass.y + layout.glass.h * 0.5,
+          w: layout.glass.w - width * 0.1,
+          h: layout.glass.h * 0.42,
+        };
+        layout.clawTop = layout.glass.y + height * 0.05;
+        layout.clawMinX = layout.glass.x + width * 0.06;
+        layout.clawMaxX = layout.glass.x + layout.glass.w - width * 0.06;
+        layout.chuteX = layout.glass.x + layout.glass.w - width * 0.08;
+        layout.chuteY = layout.glass.y + height * 0.08;
+
+        if (!state.clawX) {
+          state.clawX = layout.clawMinX;
+          state.clawY = layout.clawTop;
+        }
+      }
+
+      function spawnConfettiBurst(x, y, count = 28) {
+        const colors = ["#00f0ff", "#ff2975", "#f7a71b", "#7dff8b", "#ffffff"];
+        for (let i = 0; i < count; i += 1) {
+          particles.push({
+            x,
+            y,
+            vx: (Math.random() - 0.5) * 3.2,
+            vy: -1 - Math.random() * 2.8,
+            life: 1 + Math.random() * 1.2,
+            size: 2 + Math.random() * 3,
+            color: colors[Math.floor(Math.random() * colors.length)],
+          });
+        }
+      }
+
+      function spawnSparkle(x, y) {
+        sparkles.push({
+          x,
+          y,
+          life: 0.8,
+          size: 8 + Math.random() * 8,
+        });
+      }
+
+      function updateParticles(dt) {
+        for (let i = particles.length - 1; i >= 0; i -= 1) {
+          const p = particles[i];
+          p.vy += 3.2 * dt;
+          p.x += p.vx;
+          p.y += p.vy;
+          p.life -= dt;
+          if (p.life <= 0) {
+            particles.splice(i, 1);
+          }
+        }
+        for (let i = sparkles.length - 1; i >= 0; i -= 1) {
+          const s = sparkles[i];
+          s.life -= dt;
+          if (s.life <= 0) {
+            sparkles.splice(i, 1);
+          }
+        }
+      }
+
+      function drawMachine() {
+        const { frame, glass, pit } = layout;
+        if (!frame) return;
+
+        ctx.clearRect(0, 0, layout.w, layout.h);
+
+        ctx.save();
+        ctx.strokeStyle = "rgba(0, 240, 255, 0.7)";
+        ctx.lineWidth = 3;
+        ctx.shadowColor = "rgba(0, 240, 255, 0.6)";
+        ctx.shadowBlur = 12;
+        ctx.strokeRect(frame.x, frame.y, frame.w, frame.h);
+        ctx.restore();
+
+        ctx.save();
+        ctx.strokeStyle = "rgba(255, 41, 117, 0.5)";
+        ctx.lineWidth = 2;
+        ctx.shadowColor = "rgba(255, 41, 117, 0.6)";
+        ctx.shadowBlur = 10;
+        ctx.strokeRect(glass.x, glass.y, glass.w, glass.h);
+        ctx.restore();
+
+        const pitGradient = ctx.createLinearGradient(pit.x, pit.y, pit.x, pit.y + pit.h);
+        pitGradient.addColorStop(0, "rgba(7, 0, 19, 0.9)");
+        pitGradient.addColorStop(1, "rgba(14, 4, 34, 0.95)");
+        ctx.fillStyle = pitGradient;
+        ctx.fillRect(pit.x, pit.y, pit.w, pit.h);
+
+        const shine = ctx.createLinearGradient(glass.x, glass.y, glass.x + glass.w, glass.y + glass.h);
+        shine.addColorStop(0, "rgba(255, 255, 255, 0.08)");
+        shine.addColorStop(0.4, "rgba(255, 255, 255, 0.03)");
+        shine.addColorStop(1, "rgba(255, 255, 255, 0.0)");
+        ctx.fillStyle = shine;
+        ctx.fillRect(glass.x, glass.y, glass.w, glass.h);
+
+        ctx.save();
+        ctx.strokeStyle = "rgba(247, 167, 27, 0.6)";
+        ctx.lineWidth = 2;
+        ctx.shadowColor = "rgba(247, 167, 27, 0.7)";
+        ctx.shadowBlur = 12;
+        ctx.beginPath();
+        ctx.rect(layout.chuteX - 24, layout.chuteY + 6, 38, 28);
+        ctx.stroke();
+        ctx.restore();
+
+        drawPrizes();
+      }
+
+      function drawPrizes() {
+        const { pit } = layout;
+        ctx.save();
+        ctx.font = "32px 'Share Tech Mono', 'Press Start 2P', monospace";
+        ctx.textAlign = "center";
+        ctx.textBaseline = "middle";
+        prizeState.prizes.forEach((prize) => {
+          const x = pit.x + prize.x * pit.w;
+          const y = pit.y + prize.y * pit.h;
+          ctx.save();
+          ctx.translate(x, y);
+          ctx.rotate(prize.rotation);
+          ctx.scale(prize.scale, prize.scale);
+          ctx.shadowColor = "rgba(255, 255, 255, 0.2)";
+          ctx.shadowBlur = 8;
+          ctx.fillText(prize.emoji, 0, 0);
+          ctx.restore();
+        });
+        ctx.restore();
+      }
+
+      function drawClaw(time) {
+        const { clawX, clawY, clawOpen } = state;
+        const swing = state.swing;
+        const ropeTop = layout.glass.y + 6;
+
+        ctx.save();
+        ctx.strokeStyle = "rgba(247, 167, 27, 0.9)";
+        ctx.lineWidth = 2;
+        ctx.shadowColor = "rgba(247, 167, 27, 0.6)";
+        ctx.shadowBlur = 10;
+        ctx.beginPath();
+        ctx.moveTo(clawX, ropeTop);
+        ctx.lineTo(clawX + Math.sin(swing) * 6, clawY - 18);
+        ctx.stroke();
+        ctx.restore();
+
+        ctx.save();
+        ctx.translate(clawX, clawY);
+        ctx.rotate(swing);
+
+        ctx.strokeStyle = "rgba(0, 240, 255, 0.9)";
+        ctx.lineWidth = 3;
+        ctx.shadowColor = "rgba(0, 240, 255, 0.8)";
+        ctx.shadowBlur = 14;
+
+        ctx.beginPath();
+        ctx.arc(0, 0, 8, 0, Math.PI * 2);
+        ctx.stroke();
+
+        const prongAngle = 0.45 + clawOpen * 0.6;
+        ctx.beginPath();
+        ctx.moveTo(0, 6);
+        ctx.lineTo(Math.cos(prongAngle) * 18, Math.sin(prongAngle) * 18 + 6);
+        ctx.moveTo(0, 6);
+        ctx.lineTo(Math.cos(Math.PI - prongAngle) * 18, Math.sin(Math.PI - prongAngle) * 18 + 6);
+        ctx.stroke();
+
+        ctx.restore();
+
+        if (prizeState.carried) {
+          const wobble = Math.sin(time * 6) * 4;
+          ctx.save();
+          ctx.font = "30px 'Share Tech Mono', 'Press Start 2P', monospace";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.shadowColor = "rgba(255, 255, 255, 0.25)";
+          ctx.shadowBlur = 10;
+          ctx.fillText(prizeState.carried.emoji, clawX + wobble, clawY + 26);
+          ctx.restore();
+        }
+
+        if (prizeState.dropPrize) {
+          ctx.save();
+          ctx.font = "30px 'Share Tech Mono', 'Press Start 2P', monospace";
+          ctx.textAlign = "center";
+          ctx.textBaseline = "middle";
+          ctx.shadowColor = "rgba(255, 255, 255, 0.25)";
+          ctx.shadowBlur = 10;
+          ctx.fillText(prizeState.dropPrize.emoji, prizeState.dropPrize.x, prizeState.dropPrize.y);
+          ctx.restore();
+        }
+      }
+
+      function drawParticles() {
+        particles.forEach((p) => {
+          ctx.save();
+          ctx.fillStyle = p.color;
+          ctx.globalAlpha = Math.max(0, p.life);
+          ctx.fillRect(p.x, p.y, p.size, p.size);
+          ctx.restore();
+        });
+
+        sparkles.forEach((s) => {
+          ctx.save();
+          ctx.strokeStyle = "rgba(0, 240, 255, 0.8)";
+          ctx.globalAlpha = Math.max(0, s.life);
+          ctx.lineWidth = 1.5;
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.size * (1 - s.life + 0.3), 0, Math.PI * 2);
+          ctx.stroke();
+          ctx.restore();
+        });
+      }
+
+      function updateClaw(dt, time) {
+        const moveSpeed = 200;
+        const dropSpeed = 320;
+        const liftSpeed = 220;
+        const returnSpeed = 200;
+        const chuteSpeed = 180;
+
+        const targetXStart = layout.clawMinX;
+        const targetTop = layout.clawTop;
+        const pitBottom = layout.pit.y + layout.pit.h * 0.85;
+
+        if (state.phase === "aim") {
+          const moving = state.inputLeft || state.inputRight;
+          if (moving && Math.random() < 0.04) {
+            sound.tick();
+          }
+          if (state.inputLeft) {
+            state.clawX -= moveSpeed * dt;
+          }
+          if (state.inputRight) {
+            state.clawX += moveSpeed * dt;
+          }
+          state.clawX = Math.min(layout.clawMaxX, Math.max(layout.clawMinX, state.clawX));
+          state.clawY = targetTop;
+          state.clawOpen = 1;
+
+          const idleWave = !moving ? Math.sin(time * 1.6) * 0.12 : 0;
+          state.swing = idleWave;
+
+          if (input.dropRequested) {
+            input.dropRequested = false;
+            state.phase = "dropping";
+            state.slipChecked = false;
+            sound.clunk();
+          }
+        }
+
+        if (state.phase === "dropping") {
+          state.clawY += dropSpeed * dt;
+          state.clawOpen = 1;
+          state.swing = Math.sin(time * 2.5) * 0.08;
+          if (state.clawY >= pitBottom) {
+            state.clawY = pitBottom;
+            state.phase = "grabbing";
+            state.grabTimer = 0;
+            state.grabTarget = selectPrize();
+            state.slipChecked = false;
+          }
+        }
+
+        if (state.phase === "grabbing") {
+          state.grabTimer += dt;
+          state.clawOpen = Math.max(0, 1 - state.grabTimer * 3.5);
+          if (state.grabTimer >= 0.35) {
+            const success = attemptGrab();
+            if (success) {
+              sound.grab();
+              state.phase = "lifting";
+            } else {
+              setMessage(pickMessage("miss"));
+              state.phase = "lifting";
+            }
+          }
+        }
+
+        if (state.phase === "lifting") {
+          state.clawY -= liftSpeed * dt;
+          state.swing = Math.sin(time * 2.2) * 0.08;
+
+          if (prizeState.carried && !state.slipChecked && state.clawY < layout.pit.y) {
+            state.slipChecked = true;
+            if (Math.random() < 0.15) {
+              dropCarriedPrize();
+              setMessage(pickMessage("slip"));
+              sound.slip();
+            }
+          }
+
+          if (state.clawY <= targetTop) {
+            state.clawY = targetTop;
+            if (prizeState.carried) {
+              state.phase = "toChute";
+            } else {
+              state.phase = "returning";
+            }
+          }
+        }
+
+        if (state.phase === "toChute") {
+          state.clawX += Math.sign(layout.chuteX - state.clawX) * chuteSpeed * dt;
+          state.swing = Math.sin(time * 2.2) * 0.06;
+          if (Math.abs(state.clawX - layout.chuteX) < 4) {
+            state.clawX = layout.chuteX;
+            state.phase = "dropPrize";
+            state.dropTimer = 0;
+            state.clawOpen = 0.2;
+          }
+        }
+
+        if (state.phase === "dropPrize") {
+          state.dropTimer += dt;
+          state.clawOpen = Math.min(1, state.clawOpen + dt * 2.5);
+          if (!prizeState.dropPrize && prizeState.carried) {
+            prizeState.dropPrize = {
+              emoji: prizeState.carried.emoji,
+              x: state.clawX + 8,
+              y: state.clawY + 26,
+              vy: 40,
+            };
+            prizeState.carried = null;
+          }
+          if (prizeState.dropPrize) {
+            prizeState.dropPrize.y += prizeState.dropPrize.vy * dt;
+            prizeState.dropPrize.vy += 140 * dt;
+          }
+          if (state.dropTimer > 0.6) {
+            if (prizeState.dropPrize) {
+              addToCollection(prizeState.dropPrize.emoji);
+              prizeState.dropPrize = null;
+            }
+            state.phase = "returning";
+          }
+        }
+
+        if (state.phase === "returning") {
+          state.clawX += Math.sign(targetXStart - state.clawX) * returnSpeed * dt;
+          state.clawY += Math.sign(targetTop - state.clawY) * returnSpeed * dt;
+          state.clawOpen = Math.min(1, state.clawOpen + dt * 2);
+          state.swing = Math.sin(time * 2.2) * 0.05;
+
+          if (Math.abs(state.clawX - targetXStart) < 3 && Math.abs(state.clawY - targetTop) < 3) {
+            state.clawX = targetXStart;
+            state.clawY = targetTop;
+            state.phase = "aim";
+            if (!prizeState.carried) {
+              spawnSparkle(state.clawX, state.clawY + 18);
+            }
+          }
+        }
+
+        if (state.messageTimer > 0) {
+          state.messageTimer -= dt;
+          if (state.messageTimer <= 0) {
+            statusMessage.textContent = "Ready to grab!";
+          }
+        }
+      }
+
+      function selectPrize() {
+        const { pit } = layout;
+        let nearest = null;
+        let distance = Infinity;
+        prizeState.prizes.forEach((prize) => {
+          const x = pit.x + prize.x * pit.w;
+          const y = pit.y + prize.y * pit.h;
+          const dx = x - state.clawX;
+          const dy = y - state.clawY;
+          const dist = Math.sqrt(dx * dx + dy * dy);
+          if (dist < distance) {
+            distance = dist;
+            nearest = { prize, x, y, dist };
+          }
+        });
+        return nearest && nearest.dist < 64 ? nearest.prize : null;
+      }
+
+      function attemptGrab() {
+        if (!state.grabTarget) return false;
+        const prize = state.grabTarget;
+        const baseChance = 0.68;
+        const rarePenalty = rarePrizes.has(prize.emoji) ? 0.08 : 0;
+        if (Math.random() < baseChance - rarePenalty) {
+          prizeState.carried = prize;
+          prizeState.prizes = prizeState.prizes.filter((item) => item !== prize);
+          setMessage(pickMessage("win"));
+          return true;
+        }
+        return false;
+      }
+
+      function dropCarriedPrize(reAdd) {
+        if (!prizeState.carried) return;
+        if (reAdd !== false) {
+          prizeState.prizes.push({
+            ...prizeState.carried,
+            x: 0.08 + Math.random() * 0.84,
+            y: 0.6 + Math.random() * 0.3,
+            rotation: (Math.random() - 0.5) * 0.7,
+          });
+        }
+        prizeState.carried = null;
+      }
+
+      function addToCollection(emoji) {
+        collection.push(emoji);
+        saveCollection();
+        updateCollectionUI();
+        spawnConfettiBurst(layout.chuteX, layout.chuteY + 10, 26);
+        sound.win();
+        if (collection.length >= 10) {
+          setMessage("Prize party! 🎊");
+        }
+        if (prizeState.prizes.length < 18) {
+          prizeState.prizes.push(createPrize());
+        }
+      }
+
+      function handleDrop() {
+        if (state.phase !== "aim") return;
+        input.dropRequested = true;
+      }
+
+      function handlePointer(event) {
+        const rect = canvas.getBoundingClientRect();
+        const x = event.clientX - rect.left;
+        const y = event.clientY - rect.top;
+        if (x < rect.width * 0.33) {
+          state.inputLeft = true;
+          state.inputRight = false;
+        } else if (x > rect.width * 0.66) {
+          state.inputRight = true;
+          state.inputLeft = false;
+        } else if (y > rect.height * 0.45) {
+          handleDrop();
+        }
+      }
+
+      function clearPointer() {
+        state.inputLeft = false;
+        state.inputRight = false;
+      }
+
+      function onFirstInteraction() {
+        sound.init();
+        sound.startAmbience();
+        window.removeEventListener("keydown", onFirstInteraction);
+        canvas.removeEventListener("pointerdown", onFirstInteraction);
+      }
+
+      function animate(timestamp) {
+        const time = timestamp / 1000;
+        const dt = Math.min(0.033, (animate.lastTime ? (timestamp - animate.lastTime) / 1000 : 0.016));
+        animate.lastTime = timestamp;
+
+        drawMachine();
+        updateClaw(dt, time);
+
+        if (prizeState.dropPrize) {
+          spawnSparkle(prizeState.dropPrize.x, prizeState.dropPrize.y);
+        }
+
+        if (collection.length >= 10) {
+          state.confettiRain += dt;
+          if (state.confettiRain > 1.6) {
+            state.confettiRain = 0;
+            spawnConfettiBurst(layout.frame.x + Math.random() * layout.frame.w, layout.frame.y - 10, 16);
+          }
+        }
+
+        updateParticles(dt);
+        drawClaw(time);
+        drawParticles();
+
+        requestAnimationFrame(animate);
+      }
+
+      function setupEvents() {
+        window.addEventListener("resize", resizeCanvas);
+
+        window.addEventListener("keydown", (event) => {
+          if (["ArrowLeft", "a", "A"].includes(event.key)) {
+            state.inputLeft = true;
+            state.inputRight = false;
+          }
+          if (["ArrowRight", "d", "D"].includes(event.key)) {
+            state.inputRight = true;
+            state.inputLeft = false;
+          }
+          if ([" ", "ArrowDown"].includes(event.key)) {
+            handleDrop();
+          }
+        });
+
+        window.addEventListener("keyup", (event) => {
+          if (["ArrowLeft", "a", "A"].includes(event.key)) {
+            state.inputLeft = false;
+          }
+          if (["ArrowRight", "d", "D"].includes(event.key)) {
+            state.inputRight = false;
+          }
+        });
+
+        canvas.addEventListener("pointerdown", (event) => {
+          handlePointer(event);
+        });
+        canvas.addEventListener("pointerup", clearPointer);
+        canvas.addEventListener("pointerleave", clearPointer);
+        canvas.addEventListener("pointercancel", clearPointer);
+
+        muteButton.addEventListener("click", () => {
+          sound.setMuted(!sound.muted);
+        });
+
+        resetButton.addEventListener("click", () => {
+          collection = [];
+          saveCollection();
+          updateCollectionUI();
+          setMessage("New collection started! ✨");
+        });
+
+        window.addEventListener("keydown", onFirstInteraction, { once: true });
+        canvas.addEventListener("pointerdown", onFirstInteraction, { once: true });
+      }
+
+      function start() {
+        resizeCanvas();
+        initPrizes();
+        updateCollectionUI();
+        setupEvents();
+        requestAnimationFrame(animate);
+      }
+
+      start();
+    })();
+  </script>
+</body>
+</html>
