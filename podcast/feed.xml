@@ -14,6 +14,15 @@
     <itunes:explicit>false</itunes:explicit>
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
+<item>
+      <title>Bookmark Briefing — Feb 28, 2026</title>
+      <description><![CDATA[5 articles: NanoClaw AI Security, Claude-Native Law Firm, Anthropic Defense Debate, Lean Tech (Lovable), AGI Trades]]></description>
+      <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-02-28/2026-02-28-briefing.mp3" length="35688716" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-02-28</guid>
+      <itunes:duration>00:37:10</itunes:duration>
+      <itunes:summary>5 articles: NanoClaw AI Security, Claude-Native Law Firm, Anthropic Defense Debate, Lean Tech (Lovable), AGI Trades</itunes:summary>
+    </item>
 <!-- EPISODES_END -->
   </channel>
 </rss>
