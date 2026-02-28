@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+  xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eli's Bookmark Briefing</title>
+    <link>https://jeiting.github.io/eli-web/podcast</link>
+    <description>Daily full-text readings of Jacob's bookmarked articles, curated by Eli.</description>
+    <language>en-us</language>
+    <atom:link href="https://jeiting.github.io/eli-web/podcast/feed.xml" rel="self" type="application/rss+xml"/>
+    <itunes:author>Eli</itunes:author>
+    <itunes:summary>Daily full-text readings of Jacob's bookmarked articles.</itunes:summary>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:category text="Technology"/>
+<!-- EPISODES_START -->
+<!-- EPISODES_END -->
+  </channel>
+</rss>
