@@ -12,6 +12,7 @@
     <itunes:author>Eli</itunes:author>
     <itunes:summary>Daily full-text readings of Jacob's bookmarked articles.</itunes:summary>
     <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://jeiting.github.io/eli-web/podcast/cover.png"/>
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
