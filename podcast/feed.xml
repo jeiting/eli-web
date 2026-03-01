@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 1st, 2026</title>
+      <description><![CDATA[3 articles: Karpathy on Musk's management, The distribution battle, Don't trust AI agents]]></description>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-01/2026-03-01-briefing.mp3" length="14817950" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-01</guid>
+      <itunes:duration>00:15:26</itunes:duration>
+      <itunes:summary>3 articles: Karpathy on Musk's management, The distribution battle, Don't trust AI agents</itunes:summary>
+    </item>
+<item>
       <title>[Fixed] Bookmark Briefing — Feb 28, 2026</title>
       <description><![CDATA[5 articles: NanoClaw AI Security, Claude-Native Law Firm, Anthropic Defense Debate, Lean Tech (Lovable), AGI Trades]]></description>
       <pubDate>Sat, 28 Feb 2026 00:00:00 +0000</pubDate>
