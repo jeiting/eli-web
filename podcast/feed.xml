@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 3rd, 2026</title>
+      <description><![CDATA[3 articles: Saving SaaS through creative destruction (Eoghan McCabe), Why you can't wait until later (Ryan Holiday), and OpenCode workspaces (James Long)]]></description>
+      <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-03/2026-03-03-briefing.mp3" length="14221523" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-03</guid>
+      <itunes:duration>00:14:48</itunes:duration>
+      <itunes:summary>3 articles: Saving SaaS through creative destruction (Eoghan McCabe), Why you can't wait until later (Ryan Holiday), and OpenCode workspaces (James Long)</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 1st, 2026</title>
       <description><![CDATA[3 articles: Karpathy on Musk's management, The distribution battle, Don't trust AI agents]]></description>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
