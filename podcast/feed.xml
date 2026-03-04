@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 4th, 2026</title>
+      <description><![CDATA[7 articles: Cursor novel proof, iOS payment clarifications, model fog of war, AI hype cycles, Boom engine manufacturing, OpenAI GitHub alternative, bookmark briefing themes]]></description>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-04/2026-03-04-briefing.mp3" length="7128336" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-04</guid>
+      <itunes:duration>00:07:25</itunes:duration>
+      <itunes:summary>7 articles: Cursor novel proof, iOS payment clarifications, model fog of war, AI hype cycles, Boom engine manufacturing, OpenAI GitHub alternative, bookmark briefing themes</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 3rd, 2026</title>
       <description><![CDATA[3 articles: Saving SaaS through creative destruction (Eoghan McCabe), Why you can't wait until later (Ryan Holiday), and OpenCode workspaces (James Long)]]></description>
       <pubDate>Tue, 03 Mar 2026 00:00:00 +0000</pubDate>
