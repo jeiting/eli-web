@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Name That Pokémon!</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  
+  body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: #1a1a2e;
+    color: #eee;
+    min-height: 100vh;
+  }
+
+  .header {
+    background: linear-gradient(135deg, #e63946, #e63946 30%, #fff 30%, #fff 35%, #3d5a80 35%);
+    padding: 24px 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+  }
+
+  .header h1 {
+    font-size: 28px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    margin-bottom: 12px;
+  }
+
+  .stats {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .stat {
+    background: rgba(0,0,0,0.3);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .stat .num {
+    color: #ffd166;
+    font-size: 18px;
+  }
+
+  .input-area {
+    padding: 8px 20px 12px;
+    background: rgba(0,0,0,0.2);
+  }
+
+  .input-area input {
+    width: 100%;
+    max-width: 400px;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 20px;
+    font-size: 20px;
+    border: 3px solid #3d5a80;
+    border-radius: 30px;
+    background: #16213e;
+    color: #fff;
+    outline: none;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+
+  .input-area input:focus {
+    border-color: #ffd166;
+  }
+
+  .input-area input.correct {
+    border-color: #06d6a0;
+    animation: flash 0.4s;
+  }
+
+  .input-area input.wrong {
+    animation: shake 0.3s;
+  }
+
+  @keyframes flash {
+    0%, 100% { background: #16213e; }
+    50% { background: #064e3b; }
+  }
+
+  @keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    25% { transform: translateX(-6px); }
+    75% { transform: translateX(6px); }
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 4px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .pokemon {
+    aspect-ratio: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 4px;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .pokemon.hidden {
+    background: #16213e;
+    border: 2px solid #2a2a4a;
+  }
+
+  .pokemon.revealed {
+    background: linear-gradient(145deg, #16213e, #1a3a5c);
+    border: 2px solid #ffd166;
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  @keyframes popIn {
+    0% { transform: scale(0.5); opacity: 0; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  .pokemon .number {
+    font-size: 11px;
+    color: #666;
+    position: absolute;
+    top: 4px;
+    left: 6px;
+  }
+
+  .pokemon.revealed .number {
+    color: #ffd166;
+  }
+
+  .pokemon .sprite {
+    width: 64px;
+    height: 64px;
+    image-rendering: pixelated;
+  }
+
+  .pokemon.hidden .sprite {
+    filter: brightness(0);
+    opacity: 0.15;
+  }
+
+  .pokemon .name {
+    font-size: 11px;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  .pokemon.hidden .name {
+    color: transparent;
+  }
+
+  .pokemon.revealed .name {
+    color: #eee;
+  }
+
+  .give-up {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 24px;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+  .give-up:hover { background: #c1121f; }
+
+  .complete-banner {
+    display: none;
+    text-align: center;
+    padding: 40px 20px;
+    animation: popIn 0.6s;
+  }
+
+  .complete-banner h2 {
+    font-size: 36px;
+    color: #ffd166;
+    margin-bottom: 10px;
+  }
+
+  .complete-banner p {
+    font-size: 18px;
+    color: #aaa;
+  }
+
+  .recent-guess {
+    text-align: center;
+    padding: 4px;
+    font-size: 13px;
+    color: #06d6a0;
+    min-height: 24px;
+  }
+
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 3px;
+      padding: 8px;
+    }
+    .header h1 { font-size: 22px; }
+    .pokemon .sprite { width: 56px; height: 56px; }
+  }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🔴 Name That Pokémon! 🔴</h1>
+  <div class="stats">
+    <div class="stat"><span class="num" id="count">0</span> / 151</div>
+    <div class="stat">🕐 <span id="timer">0:00</span></div>
+  </div>
+</div>
+
+<div class="input-area">
+  <div class="recent-guess" id="recent"></div>
+  <input type="text" id="guess" placeholder="Type a Pokémon name..." autocomplete="off" autofocus />
+</div>
+
+<div class="complete-banner" id="banner">
+  <h2>🎉 Pokémon Master! 🎉</h2>
+  <p id="banner-text"></p>
+</div>
+
+<div class="grid" id="grid"></div>
+
+<button class="give-up" id="giveup">I Give Up — Reveal All</button>
+
+<script>
+const POKEMON = [
+  "Bulbasaur","Ivysaur","Venusaur","Charmander","Charmeleon","Charizard",
+  "Squirtle","Wartortle","Blastoise","Caterpie","Metapod","Butterfree",
+  "Weedle","Kakuna","Beedrill","Pidgey","Pidgeotto","Pidgeot",
+  "Rattata","Raticate","Spearow","Fearow","Ekans","Arbok",
+  "Pikachu","Raichu","Sandshrew","Sandslash","Nidoran♀","Nidorina",
+  "Nidoqueen","Nidoran♂","Nidorino","Nidoking","Clefairy","Clefable",
+  "Vulpix","Ninetales","Jigglypuff","Wigglytuff","Zubat","Golbat",
+  "Oddish","Gloom","Vileplume","Paras","Parasect","Venonat",
+  "Venomoth","Diglett","Dugtrio","Meowth","Persian","Psyduck",
+  "Golduck","Mankey","Primeape","Growlithe","Arcanine","Poliwag",
+  "Poliwhirl","Poliwrath","Abra","Kadabra","Alakazam","Machop",
+  "Machoke","Machamp","Bellsprout","Weepinbell","Victreebel","Tentacool",
+  "Tentacruel","Geodude","Graveler","Golem","Ponyta","Rapidash",
+  "Slowpoke","Slowbro","Magnemite","Magneton","Farfetch'd","Doduo",
+  "Dodrio","Seel","Dewgong","Grimer","Muk","Shellder",
+  "Cloyster","Gastly","Haunter","Gengar","Onix","Drowzee",
+  "Hypno","Krabby","Kingler","Voltorb","Electrode","Exeggcute",
+  "Exeggutor","Cubone","Marowak","Hitmonlee","Hitmonchan","Lickitung",
+  "Koffing","Weezing","Rhyhorn","Rhydon","Chansey","Tangela",
+  "Kangaskhan","Horsea","Seadra","Goldeen","Seaking","Staryu",
+  "Starmie","Mr. Mime","Scyther","Jynx","Electabuzz","Magmar",
+  "Pinsir","Tauros","Magikarp","Gyarados","Lapras","Ditto",
+  "Eevee","Vaporeon","Jolteon","Flareon","Porygon","Omanyte",
+  "Omastar","Kabuto","Kabutops","Aerodactyl","Snorlax","Articuno",
+  "Zapdos","Moltres","Dratini","Dragonair","Dragonite","Mewtwo","Mew"
+];
+
+const guessed = new Set();
+const grid = document.getElementById('grid');
+const guessInput = document.getElementById('guess');
+const countEl = document.getElementById('count');
+const timerEl = document.getElementById('timer');
+const recentEl = document.getElementById('recent');
+const bannerEl = document.getElementById('banner');
+const bannerText = document.getElementById('banner-text');
+const giveupBtn = document.getElementById('giveup');
+
+// Build grid
+POKEMON.forEach((name, i) => {
+  const div = document.createElement('div');
+  div.className = 'pokemon hidden';
+  div.id = `poke-${i}`;
+  const num = i + 1;
+  const spriteUrl = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${num}.png`;
+  div.innerHTML = `
+    <span class="number">#${num}</span>
+    <img class="sprite" src="${spriteUrl}" alt="?" loading="lazy" />
+    <span class="name">${name}</span>
+  `;
+  grid.appendChild(div);
+});
+
+// Normalize for matching
+function normalize(s) {
+  return s.toLowerCase()
+    .replace(/[♀♂\.\-\'\s]/g, '')
+    .replace(/nidoranf/g, 'nidoran')
+    .replace(/nidoranm/g, 'nidoran');
+}
+
+// Build lookup: normalized name -> index (handle nidoran specially)
+const lookup = {};
+POKEMON.forEach((name, i) => {
+  const key = normalize(name);
+  if (name === "Nidoran♀") {
+    lookup['nidoranf'] = i;
+    lookup['nidoranfemale'] = i;
+  } else if (name === "Nidoran♂") {
+    lookup['nidoranm'] = i;
+    lookup['nidoranmale'] = i;
+  } else {
+    lookup[key] = i;
+  }
+});
+// "nidoran" alone -> first unguessed nidoran
+lookup['nidoran'] = -1; // special case
+
+// Timer
+let startTime = null;
+let timerInterval = null;
+
+function startTimer() {
+  if (startTime) return;
+  startTime = Date.now();
+  timerInterval = setInterval(() => {
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    const min = Math.floor(elapsed / 60);
+    const sec = elapsed % 60;
+    timerEl.textContent = `${min}:${sec.toString().padStart(2, '0')}`;
+  }, 1000);
+}
+
+function stopTimer() {
+  clearInterval(timerInterval);
+}
+
+function reveal(index) {
+  if (guessed.has(index)) return;
+  guessed.add(index);
+  const el = document.getElementById(`poke-${index}`);
+  el.classList.remove('hidden');
+  el.classList.add('revealed');
+  countEl.textContent = guessed.size;
+  
+  if (guessed.size === POKEMON.length) {
+    stopTimer();
+    bannerEl.style.display = 'block';
+    const elapsed = Math.floor((Date.now() - startTime) / 1000);
+    const min = Math.floor(elapsed / 60);
+    const sec = elapsed % 60;
+    bannerText.textContent = `You named all 151 Pokémon in ${min}m ${sec}s!`;
+    giveupBtn.style.display = 'none';
+    guessInput.disabled = true;
+    guessInput.placeholder = 'Complete!';
+  }
+}
+
+guessInput.addEventListener('input', () => {
+  startTimer();
+  const val = guessInput.value.trim();
+  if (!val) return;
+  
+  const key = normalize(val);
+  
+  // Special case: "nidoran" without gender
+  if (key === 'nidoran') {
+    const f = POKEMON.indexOf("Nidoran♀");
+    const m = POKEMON.indexOf("Nidoran♂");
+    if (!guessed.has(f)) {
+      reveal(f);
+      recentEl.textContent = `✓ Nidoran♀ (#${f+1})`;
+      guessInput.value = '';
+      guessInput.classList.add('correct');
+      setTimeout(() => guessInput.classList.remove('correct'), 400);
+    } else if (!guessed.has(m)) {
+      reveal(m);
+      recentEl.textContent = `✓ Nidoran♂ (#${m+1})`;
+      guessInput.value = '';
+      guessInput.classList.add('correct');
+      setTimeout(() => guessInput.classList.remove('correct'), 400);
+    }
+    return;
+  }
+  
+  if (key in lookup) {
+    const idx = lookup[key];
+    if (!guessed.has(idx)) {
+      reveal(idx);
+      recentEl.textContent = `✓ ${POKEMON[idx]} (#${idx+1})`;
+      guessInput.value = '';
+      guessInput.classList.add('correct');
+      setTimeout(() => guessInput.classList.remove('correct'), 400);
+    }
+  }
+});
+
+giveupBtn.addEventListener('click', () => {
+  stopTimer();
+  POKEMON.forEach((_, i) => reveal(i));
+  giveupBtn.style.display = 'none';
+  guessInput.disabled = true;
+  guessInput.placeholder = 'Game over!';
+  if (guessed.size < POKEMON.length) {
+    recentEl.textContent = `You got ${guessed.size} out of 151!`;
+  }
+});
+</script>
+</body>
+</html>
