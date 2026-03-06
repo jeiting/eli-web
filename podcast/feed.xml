@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 6, 2026</title>
+      <description><![CDATA[3 articles: Pioneer's investment process, Daniel Gross's AGI Trades reviewed, Apple developer ban]]></description>
+      <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-06/2026-03-06-briefing.mp3" length="21847187" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-06</guid>
+      <itunes:duration>00:22:45</itunes:duration>
+      <itunes:summary>3 articles: Pioneer's investment process, Daniel Gross's AGI Trades reviewed, Apple developer ban</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 4th, 2026</title>
       <description><![CDATA[Full text readings: Cursor novel proof, iOS payment clarifications, model fog of war, AI hype cycles, Boom engine manufacturing, OpenAI GitHub alternative]]></description>
       <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
