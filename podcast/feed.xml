@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 7, 2026</title>
+      <description><![CDATA[12 items: Agent Skills on Replit, Claude Code vs Lovable, ChatGPT query fanouts, product launch advice, RevenueCat subscription report, CLI renaissance, AI causal introspection, trial length optimization, Cal.com revenue transparency, Todoist stock buyback, Rork Max launch success]]></description>
+      <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-07/2026-03-07-briefing.mp3" length="6426165" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-07</guid>
+      <itunes:duration>00:06:41</itunes:duration>
+      <itunes:summary>12 items: Agent Skills on Replit, Claude Code vs Lovable, ChatGPT query fanouts, product launch advice, RevenueCat subscription report, CLI renaissance, AI causal introspection, trial length optimization, Cal.com revenue transparency, Todoist stock buyback, Rork Max launch success</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 6, 2026</title>
       <description><![CDATA[3 articles: Pioneer's investment process, Daniel Gross's AGI Trades reviewed, Apple developer ban]]></description>
       <pubDate>Fri, 06 Mar 2026 00:00:00 +0000</pubDate>
