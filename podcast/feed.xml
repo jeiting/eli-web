@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 8, 2026</title>
+      <description><![CDATA[5 articles: AI changes how we build (vibe coding, code review bottlenecks, spam), reverse-engineering creative voice, security window]]></description>
+      <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-08/2026-03-08-briefing.mp3" length="7874394" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-08</guid>
+      <itunes:duration>00:08:12</itunes:duration>
+      <itunes:summary>5 articles: AI changes how we build (vibe coding, code review bottlenecks, spam), reverse-engineering creative voice, security window</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 7, 2026</title>
       <description><![CDATA[12 items: Agent Skills on Replit, Claude Code vs Lovable, ChatGPT query fanouts, product launch advice, RevenueCat subscription report, CLI renaissance, AI causal introspection, trial length optimization, Cal.com revenue transparency, Todoist stock buyback, Rork Max launch success]]></description>
       <pubDate>Sat, 07 Mar 2026 00:00:00 +0000</pubDate>
