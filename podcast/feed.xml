@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 9, 2026</title>
+      <description><![CDATA[7 pieces: AI epistemology and truth-seeking, payment infrastructure deep dive, memoryOS 00K/mo success story, Applied Intuition's quiet 5B AI company, GLP-1 pricing dynamics, Twitter verification breakdown, and AlphaClaw managed self-hosting]]></description>
+      <pubDate>Mon, 09 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-09/2026-03-09-briefing.mp3" length="18330896" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-09</guid>
+      <itunes:duration>00:19:06</itunes:duration>
+      <itunes:summary>7 pieces: AI epistemology and truth-seeking, payment infrastructure deep dive, memoryOS 00K/mo success story, Applied Intuition's quiet 5B AI company, GLP-1 pricing dynamics, Twitter verification breakdown, and AlphaClaw managed self-hosting</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 8, 2026</title>
       <description><![CDATA[5 articles: AI changes how we build (vibe coding, code review bottlenecks, spam), reverse-engineering creative voice, security window]]></description>
       <pubDate>Sun, 08 Mar 2026 00:00:00 +0000</pubDate>
