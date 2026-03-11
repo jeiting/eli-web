@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 11, 2026</title>
+      <description><![CDATA[5 articles: AI agents shipping faster than docs (Hahnbee Lee/Mintlify), When Your Life's Work Becomes Free and Abundant (Aditya Agarwal), Stripe on AI agent payments, indie dev strategy debate, subscription pricing experiments]]></description>
+      <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-11/2026-03-11-briefing.mp3" length="19353643" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-11</guid>
+      <itunes:duration>00:20:10</itunes:duration>
+      <itunes:summary>5 articles: AI agents shipping faster than docs (Hahnbee Lee/Mintlify), When Your Life's Work Becomes Free and Abundant (Aditya Agarwal), Stripe on AI agent payments, indie dev strategy debate, subscription pricing experiments</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 10, 2026</title>
       <description><![CDATA[9 articles: Intercom 50M raise, iOS subscription automation with ASC CLI + RevenueCat MCP, State of Subscription Apps 2026, Eric Seufert on AI disruption, memoryOS app breakdown, TikTok growth strategy, market saturation, CLI demand surge, Karpathy's autoresearch, Sequoia's Services essay]]></description>
       <pubDate>Tue, 10 Mar 2026 00:00:00 +0000</pubDate>
