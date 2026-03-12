@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 12, 2026</title>
+      <description><![CDATA[4 articles: Paywall conversion data, NYT AI writing quiz results, AI pricing collapse, commerce as civilization technology]]></description>
+      <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-12/2026-03-12-briefing.mp3" length="10060320" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-12</guid>
+      <itunes:duration>00:10:28</itunes:duration>
+      <itunes:summary>4 articles: Paywall conversion data, NYT AI writing quiz results, AI pricing collapse, commerce as civilization technology</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 11, 2026</title>
       <description><![CDATA[5 articles: AI agents shipping faster than docs (Hahnbee Lee/Mintlify), When Your Life's Work Becomes Free and Abundant (Aditya Agarwal), Stripe on AI agent payments, indie dev strategy debate, subscription pricing experiments]]></description>
       <pubDate>Wed, 11 Mar 2026 00:00:00 +0000</pubDate>
