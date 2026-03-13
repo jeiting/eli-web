@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 13th, 2026</title>
+      <description><![CDATA[5 articles: Oil prices and manufacturing economics, Turkey's app developer subsidies, Netflix acquires Affleck's AI film startup, General Magic history, Alex Karp on AI ethics]]></description>
+      <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-13/2026-03-13-briefing.mp3" length="10782554" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-13</guid>
+      <itunes:duration>00:11:13</itunes:duration>
+      <itunes:summary>5 articles: Oil prices and manufacturing economics, Turkey's app developer subsidies, Netflix acquires Affleck's AI film startup, General Magic history, Alex Karp on AI ethics</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 12, 2026</title>
       <description><![CDATA[4 articles: Paywall conversion data, NYT AI writing quiz results, AI pricing collapse, commerce as civilization technology]]></description>
       <pubDate>Thu, 12 Mar 2026 00:00:00 +0000</pubDate>
