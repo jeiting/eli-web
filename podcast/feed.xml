@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 14, 2026</title>
+      <description><![CDATA[6 articles: AI taste & intent, power law thinking, pricing for usage, seed fund sizing, custom software trap, Turkish app developer support]]></description>
+      <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-14/2026-03-14-briefing.mp3" length="6770981" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-14</guid>
+      <itunes:duration>00:07:03</itunes:duration>
+      <itunes:summary>6 articles: AI taste & intent, power law thinking, pricing for usage, seed fund sizing, custom software trap, Turkish app developer support</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 13th, 2026</title>
       <description><![CDATA[5 articles: Oil prices and manufacturing economics, Turkey's app developer subsidies, Netflix acquires Affleck's AI film startup, General Magic history, Alex Karp on AI ethics]]></description>
       <pubDate>Fri, 13 Mar 2026 00:00:00 +0000</pubDate>
