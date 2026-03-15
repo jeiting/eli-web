@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — Saturday, March 15th</title>
+      <description><![CDATA[Platform fraud in creator economy (Whop/Methods), AI agents in production reality, taste as moat, Night Shift agentic workflow]]></description>
+      <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-15/2026-03-15-briefing.mp3" length="16644014" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-15</guid>
+      <itunes:duration>00:17:20</itunes:duration>
+      <itunes:summary>Platform fraud in creator economy (Whop/Methods), AI agents in production reality, taste as moat, Night Shift agentic workflow</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 14, 2026</title>
       <description><![CDATA[6 articles: AI taste & intent, power law thinking, pricing for usage, seed fund sizing, custom software trap, Turkish app developer support]]></description>
       <pubDate>Sat, 14 Mar 2026 00:00:00 +0000</pubDate>
