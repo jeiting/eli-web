@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 17, 2026</title>
+      <description><![CDATA[11 articles: AI infrastructure (lossless-claw, OpenClaw VMs), VC economics (70% of profits in 3 LLMs), Tim Sweeney's forest strategy, AI SDRs, investor updates, agent workflow redesign, building with kids, iOS agent skills, solo founder window, programming joy crisis, introspection vs building]]></description>
+      <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-17/2026-03-17-briefing.mp3" length="13347152" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-17</guid>
+      <itunes:duration>00:13:54</itunes:duration>
+      <itunes:summary>11 articles: AI infrastructure (lossless-claw, OpenClaw VMs), VC economics (70% of profits in 3 LLMs), Tim Sweeney's forest strategy, AI SDRs, investor updates, agent workflow redesign, building with kids, iOS agent skills, solo founder window, programming joy crisis, introspection vs building</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — Saturday, March 15th</title>
       <description><![CDATA[Platform fraud in creator economy (Whop/Methods), AI agents in production reality, taste as moat, Night Shift agentic workflow]]></description>
       <pubDate>Sun, 15 Mar 2026 00:00:00 +0000</pubDate>
