@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 18, 2026</title>
+      <description><![CDATA[9 articles: Generational founders psychology (xAI), Effective Altruist AI regulation astroturfing, AI agent harness engineering, founder storytelling, RevenueCat app supply explosion, Rico announcement, funding trends, CPO AI spend, enterprise adoption]]></description>
+      <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-18/2026-03-18-briefing.mp3" length="48619564" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-18</guid>
+      <itunes:duration>00:50:38</itunes:duration>
+      <itunes:summary>9 articles: Generational founders psychology (xAI), Effective Altruist AI regulation astroturfing, AI agent harness engineering, founder storytelling, RevenueCat app supply explosion, Rico announcement, funding trends, CPO AI spend, enterprise adoption</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 17, 2026</title>
       <description><![CDATA[11 articles: AI infrastructure (lossless-claw, OpenClaw VMs), VC economics (70% of profits in 3 LLMs), Tim Sweeney's forest strategy, AI SDRs, investor updates, agent workflow redesign, building with kids, iOS agent skills, solo founder window, programming joy crisis, introspection vs building]]></description>
       <pubDate>Tue, 17 Mar 2026 00:00:00 +0000</pubDate>
