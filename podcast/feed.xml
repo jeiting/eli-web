@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 19, 2026</title>
+      <description><![CDATA[8 articles: AI agents replacing humans (Jason Lemkin), system of action vs. record (Cristina Cordova), startup strategy (a16z), Coconote acquisition, Cursor pricing controversy, AI value reallocation (Eric Seufert), OpenStreetMap Minecraft tool]]></description>
+      <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-19/2026-03-19-briefing.mp3" length="16260328" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-19</guid>
+      <itunes:duration>00:16:56</itunes:duration>
+      <itunes:summary>8 articles: AI agents replacing humans (Jason Lemkin), system of action vs. record (Cristina Cordova), startup strategy (a16z), Coconote acquisition, Cursor pricing controversy, AI value reallocation (Eric Seufert), OpenStreetMap Minecraft tool</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 18, 2026</title>
       <description><![CDATA[9 articles: Generational founders psychology (xAI), Effective Altruist AI regulation astroturfing, AI agent harness engineering, founder storytelling, RevenueCat app supply explosion, Rico announcement, funding trends, CPO AI spend, enterprise adoption]]></description>
       <pubDate>Wed, 18 Mar 2026 00:00:00 +0000</pubDate>
