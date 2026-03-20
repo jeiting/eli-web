@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 20, 2026</title>
+      <description><![CDATA[3 articles: Career advice on playing to strengths (Jaleh Rezaei), demand-first product strategy via TikTok validation (Viktor Seraleev), Sony's 5M Marvel IP miss (Trung Phan)]]></description>
+      <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-20/2026-03-20-briefing.mp3" length="8401859" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-20</guid>
+      <itunes:duration>00:08:45</itunes:duration>
+      <itunes:summary>3 articles: Career advice on playing to strengths (Jaleh Rezaei), demand-first product strategy via TikTok validation (Viktor Seraleev), Sony&apos;s 5M Marvel IP miss (Trung Phan)</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 19, 2026</title>
       <description><![CDATA[8 articles: AI agents replacing humans (Jason Lemkin), system of action vs. record (Cristina Cordova), startup strategy (a16z), Coconote acquisition, Cursor pricing controversy, AI value reallocation (Eric Seufert), OpenStreetMap Minecraft tool]]></description>
       <pubDate>Thu, 19 Mar 2026 00:00:00 +0000</pubDate>
