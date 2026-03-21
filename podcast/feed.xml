@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 21, 2026</title>
+      <description><![CDATA[8 articles: Visual communication, Apple vs vibe-coding apps, AI verification reality, malleable software debate, gstack dev tool, Kanna UI for Claude Code, Halter AI livestock, and vibe-coded app design fixes]]></description>
+      <pubDate>Sat, 21 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-21/2026-03-21-briefing.mp3" length="26341085" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-21</guid>
+      <itunes:duration>00:27:26</itunes:duration>
+      <itunes:summary>8 articles: Visual communication, Apple vs vibe-coding apps, AI verification reality, malleable software debate, gstack dev tool, Kanna UI for Claude Code, Halter AI livestock, and vibe-coded app design fixes</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 20, 2026</title>
       <description><![CDATA[3 articles: Career advice on playing to strengths (Jaleh Rezaei), demand-first product strategy via TikTok validation (Viktor Seraleev), Sony's 5M Marvel IP miss (Trung Phan)]]></description>
       <pubDate>Fri, 20 Mar 2026 00:00:00 +0000</pubDate>
