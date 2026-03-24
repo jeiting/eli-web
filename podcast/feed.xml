@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 24, 2026</title>
+      <description><![CDATA[10 pieces: Money flows and gravity (Guillermo Flor), Two paths left for software (a16z), SaaS margin compression (Amir/Jason), Claude+Codex workflows (Filip), Taste-skill gap (Dimitri), Single devs vs teams (Eduardo), Ghostty beats Terraform (Mitchell), Guinndex AI voice agent (Bearly), Rising testosterone mystery (Crémieux), Anthropic's platform abstractions (Matt)]]></description>
+      <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-24/2026-03-24-briefing.mp3" length="29258858" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-24</guid>
+      <itunes:duration>00:30:28</itunes:duration>
+      <itunes:summary>10 pieces: Money flows and gravity (Guillermo Flor), Two paths left for software (a16z), SaaS margin compression (Amir/Jason), Claude+Codex workflows (Filip), Taste-skill gap (Dimitri), Single devs vs teams (Eduardo), Ghostty beats Terraform (Mitchell), Guinndex AI voice agent (Bearly), Rising testosterone mystery (Crémieux), Anthropic&apos;s platform abstractions (Matt)</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 23, 2026</title>
       <description><![CDATA[8 pieces: Paid acquisition debate (Eric Seufert, Hendrik Haandrikman, Sean Gilfillan), Delta's oil refinery, Chris on getting on the plane, Facebook platform criticism, Tom Blomfield on embedded AI SDKs, Jack on open source's future]]></description>
       <pubDate>Mon, 23 Mar 2026 00:00:00 +0000</pubDate>
