@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 25, 2026</title>
+      <description><![CDATA[6 articles: How Money Flows, Two Paths Left for Software, Being a Human in the Singularity, X Revenue Sharing, Claude Code Performance, Washington Bans Noncompetes]]></description>
+      <pubDate>Wed, 25 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-25/2026-03-25-briefing.mp3" length="27675629" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-25</guid>
+      <itunes:duration>00:28:49</itunes:duration>
+      <itunes:summary>6 articles: How Money Flows, Two Paths Left for Software, Being a Human in the Singularity, X Revenue Sharing, Claude Code Performance, Washington Bans Noncompetes</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 24, 2026</title>
       <description><![CDATA[10 pieces: Money flows and gravity (Guillermo Flor), Two paths left for software (a16z), SaaS margin compression (Amir/Jason), Claude+Codex workflows (Filip), Taste-skill gap (Dimitri), Single devs vs teams (Eduardo), Ghostty beats Terraform (Mitchell), Guinndex AI voice agent (Bearly), Rising testosterone mystery (Crémieux), Anthropic's platform abstractions (Matt)]]></description>
       <pubDate>Tue, 24 Mar 2026 00:00:00 +0000</pubDate>
