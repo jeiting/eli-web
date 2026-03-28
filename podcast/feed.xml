@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 28, 2026</title>
+      <description><![CDATA[7 articles: Cheng Lou's TypeScript text measurement, Grant Lee on design tax, CEO transparency debate, Elon on prioritization, Stripe Projects for agents, broken design culture, cracked founders using AI in Costa Rica, Michael Schade on support as accelerant]]></description>
+      <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-28/2026-03-28-briefing.mp3" length="24282636" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-28</guid>
+      <itunes:duration>00:25:17</itunes:duration>
+      <itunes:summary>7 articles: Cheng Lou&apos;s TypeScript text measurement, Grant Lee on design tax, CEO transparency debate, Elon on prioritization, Stripe Projects for agents, broken design culture, cracked founders using AI in Costa Rica, Michael Schade on support as accelerant</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 26, 2026</title>
       <description><![CDATA[12 articles: Joy in software, hardware revolution, Life Reset's 95% drop, Code.Storage scaling to 15K repos/min, Sierra's Ghostwriter, Basecamp CLI, Garry Tan on tokens, AI layoff categories, Jamie Dimon on competition, Mitchell Green's work ethic, subscription refunds, Guillermo Rauch staying terminally online]]></description>
       <pubDate>Thu, 26 Mar 2026 00:00:00 +0000</pubDate>
