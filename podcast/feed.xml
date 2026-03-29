@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — Saturday, March 29, 2026</title>
+      <description><![CDATA[11 pieces: BetterMe fitness app monetization, rain sounds app, Cheng Lou text measurement, Anthropic Operon, tech job market data, GitLab founder cancer story, 1000x engineer, Banksy booth ROI, AI job impact analysis, language learning apps, Japanese zaibatsu history]]></description>
+      <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-29/2026-03-29-briefing.mp3" length="23162924" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-29</guid>
+      <itunes:duration>00:24:07</itunes:duration>
+      <itunes:summary>11 pieces: BetterMe fitness app monetization, rain sounds app, Cheng Lou text measurement, Anthropic Operon, tech job market data, GitLab founder cancer story, 1000x engineer, Banksy booth ROI, AI job impact analysis, language learning apps, Japanese zaibatsu history</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 28, 2026</title>
       <description><![CDATA[7 articles: Cheng Lou's TypeScript text measurement, Grant Lee on design tax, CEO transparency debate, Elon on prioritization, Stripe Projects for agents, broken design culture, cracked founders using AI in Costa Rica, Michael Schade on support as accelerant]]></description>
       <pubDate>Sat, 28 Mar 2026 00:00:00 +0000</pubDate>
