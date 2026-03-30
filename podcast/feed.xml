@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 30, 2026</title>
+      <description><![CDATA[10 articles: Claude Code skills architecture, Jason Lemkin on B2B AI strategy, GitLab CEO Sid's cancer journey, hustle vs. slowing down, Forrest Gump's Apple investment, AI pricing power, DoorDash's city catalog vision]]></description>
+      <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-30/2026-03-30-briefing.mp3" length="42907733" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-30</guid>
+      <itunes:duration>00:44:41</itunes:duration>
+      <itunes:summary>10 articles: Claude Code skills architecture, Jason Lemkin on B2B AI strategy, GitLab CEO Sid&apos;s cancer journey, hustle vs. slowing down, Forrest Gump&apos;s Apple investment, AI pricing power, DoorDash&apos;s city catalog vision</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — Saturday, March 29, 2026</title>
       <description><![CDATA[11 pieces: BetterMe fitness app monetization, rain sounds app, Cheng Lou text measurement, Anthropic Operon, tech job market data, GitLab founder cancer story, 1000x engineer, Banksy booth ROI, AI job impact analysis, language learning apps, Japanese zaibatsu history]]></description>
       <pubDate>Sun, 29 Mar 2026 00:00:00 +0000</pubDate>
