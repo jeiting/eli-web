@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — March 31, 2026</title>
+      <description><![CDATA[7 articles: Knuth-Plass text layout, mobile app monetization case study, Pretext userland text measurement, Marc Andreessen origin story, startup mortality trends, DoorDash hiring philosophy, Notion's Think Together]]></description>
+      <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-03-31/2026-03-31-briefing.mp3" length="8559430" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-03-31</guid>
+      <itunes:duration>00:08:54</itunes:duration>
+      <itunes:summary>7 articles: Knuth-Plass text layout, mobile app monetization case study, Pretext userland text measurement, Marc Andreessen origin story, startup mortality trends, DoorDash hiring philosophy, Notion&apos;s Think Together</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 30, 2026</title>
       <description><![CDATA[10 articles: Claude Code skills architecture, Jason Lemkin on B2B AI strategy, GitLab CEO Sid's cancer journey, hustle vs. slowing down, Forrest Gump's Apple investment, AI pricing power, DoorDash's city catalog vision]]></description>
       <pubDate>Mon, 30 Mar 2026 00:00:00 +0000</pubDate>
