@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 1, 2026</title>
+      <description><![CDATA[9 articles: trial length psychology (RevenueCat), autonomous agents vs copilots (Decagon), Block's intelligence-over-hierarchy org design, robotics + LLMs (Physical Intelligence), vibe-coding limits, and AI's impact on age, work, and velocity]]></description>
+      <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-01/2026-04-01-briefing.mp3" length="49828302" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-01</guid>
+      <itunes:duration>00:51:54</itunes:duration>
+      <itunes:summary>9 articles: trial length psychology (RevenueCat), autonomous agents vs copilots (Decagon), Block&apos;s intelligence-over-hierarchy org design, robotics + LLMs (Physical Intelligence), vibe-coding limits, and AI&apos;s impact on age, work, and velocity</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — March 31, 2026</title>
       <description><![CDATA[7 articles: Knuth-Plass text layout, mobile app monetization case study, Pretext userland text measurement, Marc Andreessen origin story, startup mortality trends, DoorDash hiring philosophy, Notion's Think Together]]></description>
       <pubDate>Tue, 31 Mar 2026 00:00:00 +0000</pubDate>
