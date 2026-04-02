@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 2nd, 2026</title>
+      <description><![CDATA[Six pieces on AI and work: Service as software, AI writing workflow, vibe coding satire, European founder parody, Gumroad's AI CEO, and parallelization over superintelligence]]></description>
+      <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-02/2026-04-02-briefing.mp3" length="32792285" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-02</guid>
+      <itunes:duration>00:34:09</itunes:duration>
+      <itunes:summary>Six pieces on AI and work: Service as software, AI writing workflow, vibe coding satire, European founder parody, Gumroad&apos;s AI CEO, and parallelization over superintelligence</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 1, 2026</title>
       <description><![CDATA[9 articles: trial length psychology (RevenueCat), autonomous agents vs copilots (Decagon), Block's intelligence-over-hierarchy org design, robotics + LLMs (Physical Intelligence), vibe-coding limits, and AI's impact on age, work, and velocity]]></description>
       <pubDate>Wed, 01 Apr 2026 00:00:00 +0000</pubDate>
