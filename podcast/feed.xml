@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 3rd, 2026</title>
+      <description><![CDATA[10 articles: OpenClaw best practices, quality vs speed in AI, humanizing technology, hybrid monetization, agent-friendly pricing pages, SaaS survival, Knuth-Plass typography, userland text measurement, Basecamp MCP]]></description>
+      <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-03/2026-04-03-briefing.mp3" length="20527691" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-03</guid>
+      <itunes:duration>00:21:22</itunes:duration>
+      <itunes:summary>10 articles: OpenClaw best practices, quality vs speed in AI, humanizing technology, hybrid monetization, agent-friendly pricing pages, SaaS survival, Knuth-Plass typography, userland text measurement, Basecamp MCP</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 2nd, 2026</title>
       <description><![CDATA[Six pieces on AI and work: Service as software, AI writing workflow, vibe coding satire, European founder parody, Gumroad's AI CEO, and parallelization over superintelligence]]></description>
       <pubDate>Thu, 02 Apr 2026 00:00:00 +0000</pubDate>
