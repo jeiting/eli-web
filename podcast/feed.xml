@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 4, 2026</title>
+      <description><![CDATA[7 articles: Niantic's data pivot, Wright Thompson on writing, AI emotions, space toilets, subscription economics, incumbents vs startups, solo founder life]]></description>
+      <pubDate>Sat, 04 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-04/2026-04-04-briefing.mp3" length="8083792" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-04</guid>
+      <itunes:duration>00:08:25</itunes:duration>
+      <itunes:summary>7 articles: Niantic&apos;s data pivot, Wright Thompson on writing, AI emotions, space toilets, subscription economics, incumbents vs startups, solo founder life</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 3rd, 2026</title>
       <description><![CDATA[10 articles: OpenClaw best practices, quality vs speed in AI, humanizing technology, hybrid monetization, agent-friendly pricing pages, SaaS survival, Knuth-Plass typography, userland text measurement, Basecamp MCP]]></description>
       <pubDate>Fri, 03 Apr 2026 00:00:00 +0000</pubDate>
