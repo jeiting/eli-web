@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 6, 2026</title>
+      <description><![CDATA[9 articles: Tech expertise leading to anti-tech choices (levelsio), Obsidian's $350M lean team, developer design taste (Peer Richelsen), scaling a prayer app to $25k/month via TikTok, building AI VP of Customer Success (Jason Lemkin/SaaStr), OpenAI CFO drama, OpenAI's no-roadmaps approach, SF housing crisis, and entropy hunting as future work]]></description>
+      <pubDate>Mon, 06 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-06/2026-04-06-briefing.mp3" length="34644680" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-06</guid>
+      <itunes:duration>00:36:05</itunes:duration>
+      <itunes:summary>9 articles: Tech expertise leading to anti-tech choices (levelsio), Obsidian&apos;s $350M lean team, developer design taste (Peer Richelsen), scaling a prayer app to $25k/month via TikTok, building AI VP of Customer Success (Jason Lemkin/SaaStr), OpenAI CFO drama, OpenAI&apos;s no-roadmaps approach, SF housing crisis, and entropy hunting as future work</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 5, 2026</title>
       <description><![CDATA[5 articles: F-15E shootdown analysis, SERE training, OpenAI acquires TBPN, Karpathy's LLM knowledge bases, AI coding agent best practices]]></description>
       <pubDate>Sun, 05 Apr 2026 00:00:00 +0000</pubDate>
