@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 11, 2026</title>
+      <description><![CDATA[7 articles: American dynamism & AI competition, building with believers, newsletter strategy at scale, press timing, Claude as enterprise layer, SaaS M&A missed opportunities, no-code success stories]]></description>
+      <pubDate>Sat, 11 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-11/2026-04-11-briefing.mp3" length="31105402" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-11</guid>
+      <itunes:duration>00:32:24</itunes:duration>
+      <itunes:summary>7 articles: American dynamism &amp; AI competition, building with believers, newsletter strategy at scale, press timing, Claude as enterprise layer, SaaS M&amp;A missed opportunities, no-code success stories</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 10, 2026</title>
       <description><![CDATA[14 articles: imposter syndrome in founders, software quality vs revenue, engineering specialization, mobile app economics (YarnPal 90K/mo, diet app M/mo), AI-native company building, employee onboarding, AI pricing benchmarks, Karpathy on the AI capability gap, Linear's agent platform growth]]></description>
       <pubDate>Fri, 10 Apr 2026 00:00:00 +0000</pubDate>
