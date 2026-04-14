@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 14, 2026</title>
+      <description><![CDATA[13 pieces: Tibo on newsletter ROI, Bumble's 35 product pages, Wikiwise LLM wikis, Linear's AI productivity data, Aaron Levie on headless software, patio11 at MicroConf, Marc Randolph on SV's fading advantages]]></description>
+      <pubDate>Tue, 14 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-14/2026-04-14-briefing.mp3" length="17374607" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-14</guid>
+      <itunes:duration>00:18:05</itunes:duration>
+      <itunes:summary>13 pieces: Tibo on newsletter ROI, Bumble&apos;s 35 product pages, Wikiwise LLM wikis, Linear&apos;s AI productivity data, Aaron Levie on headless software, patio11 at MicroConf, Marc Randolph on SV&apos;s fading advantages</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 12, 2026</title>
       <description><![CDATA[11 articles: AI adoption tensions, mid dev bottleneck, PM strategy framework, reversibility over perfection, Expo AGENTS.md, private aviation economics, Copernican intelligence, Taste design tool, Anthropic stats critique]]></description>
       <pubDate>Sun, 12 Apr 2026 00:00:00 +0000</pubDate>
