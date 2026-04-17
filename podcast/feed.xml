@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 17, 2026</title>
+      <description><![CDATA[6 articles: Brad Jacobs (founder psychology), hard paywalls, Cal.com open-source debate, AI adoption barriers, AI market evolution, App Store drama]]></description>
+      <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-17/2026-04-17-briefing.mp3" length="6979544" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-17</guid>
+      <itunes:duration>00:07:16</itunes:duration>
+      <itunes:summary>6 articles: Brad Jacobs (founder psychology), hard paywalls, Cal.com open-source debate, AI adoption barriers, AI market evolution, App Store drama</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 16, 2026</title>
       <description><![CDATA[8 articles: Zapier SDK launch, Jason Cohen profile, modern app monetization, life insurance PSA, Carry acquisition, OpenCode distributed systems, app checkout compliance, OpenClaw + Tiller integration]]></description>
       <pubDate>Thu, 16 Apr 2026 00:00:00 +0000</pubDate>
