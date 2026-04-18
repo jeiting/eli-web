@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 18, 2026</title>
+      <description><![CDATA[8 articles: AI hollowing out the middle, Zapier's three-layer AI brain, Sendblue 4x growth, Claude Design launch, Superwall on Stripe checkout compliance, private credit deep dive, SaaS stock dynamics, Coatue on 3x AI spend]]></description>
+      <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-18/2026-04-18-briefing.mp3" length="15972772" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-18</guid>
+      <itunes:duration>00:16:38</itunes:duration>
+      <itunes:summary>8 articles: AI hollowing out the middle, Zapier&apos;s three-layer AI brain, Sendblue 4x growth, Claude Design launch, Superwall on Stripe checkout compliance, private credit deep dive, SaaS stock dynamics, Coatue on 3x AI spend</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 17, 2026</title>
       <description><![CDATA[6 articles: Brad Jacobs (founder psychology), hard paywalls, Cal.com open-source debate, AI adoption barriers, AI market evolution, App Store drama]]></description>
       <pubDate>Fri, 17 Apr 2026 00:00:00 +0000</pubDate>
