@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 19, 2026</title>
+      <description><![CDATA[8 articles: Claude Design vs Figma, Agent-First Startups, Consumer App Psychology, Customer Segmentation]]></description>
+      <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-19/2026-04-19-briefing.mp3" length="18094751" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-19</guid>
+      <itunes:duration>00:18:50</itunes:duration>
+      <itunes:summary>8 articles: Claude Design vs Figma, Agent-First Startups, Consumer App Psychology, Customer Segmentation</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 18, 2026</title>
       <description><![CDATA[8 articles: AI hollowing out the middle, Zapier's three-layer AI brain, Sendblue 4x growth, Claude Design launch, Superwall on Stripe checkout compliance, private credit deep dive, SaaS stock dynamics, Coatue on 3x AI spend]]></description>
       <pubDate>Sat, 18 Apr 2026 00:00:00 +0000</pubDate>
