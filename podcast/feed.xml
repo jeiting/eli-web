@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 20, 2026</title>
+      <description><![CDATA[7 articles: Figma vs Claude Design, Arnold Schwarzenegger's extreme mindset, Panthalassa floating data centers, Codex vs Claude debate, Candle app freemium growth, Palantir's Technological Republic, AI and UBI reality]]></description>
+      <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-20/2026-04-20-briefing.mp3" length="21947498" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-20</guid>
+      <itunes:duration>00:22:51</itunes:duration>
+      <itunes:summary>7 articles: Figma vs Claude Design, Arnold Schwarzenegger&apos;s extreme mindset, Panthalassa floating data centers, Codex vs Claude debate, Candle app freemium growth, Palantir&apos;s Technological Republic, AI and UBI reality</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 19, 2026</title>
       <description><![CDATA[8 articles: Claude Design vs Figma, Agent-First Startups, Consumer App Psychology, Customer Segmentation]]></description>
       <pubDate>Sun, 19 Apr 2026 00:00:00 +0000</pubDate>
