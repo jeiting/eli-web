@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 21, 2026</title>
+      <description><![CDATA[6 articles: SaaS obsession vs vibe coding, AI as multiplier not equalizer, why never to raise VC, cognitive load design, revenue per token, and technology diffusion]]></description>
+      <pubDate>Tue, 21 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-21/2026-04-21-briefing.mp3" length="7565941" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-21</guid>
+      <itunes:duration>00:07:52</itunes:duration>
+      <itunes:summary>6 articles: SaaS obsession vs vibe coding, AI as multiplier not equalizer, why never to raise VC, cognitive load design, revenue per token, and technology diffusion</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 20, 2026</title>
       <description><![CDATA[7 articles: Figma vs Claude Design, Arnold Schwarzenegger's extreme mindset, Panthalassa floating data centers, Codex vs Claude debate, Candle app freemium growth, Palantir's Technological Republic, AI and UBI reality]]></description>
       <pubDate>Mon, 20 Apr 2026 00:00:00 +0000</pubDate>
