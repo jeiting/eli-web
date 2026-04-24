@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 24, 2026</title>
+      <description><![CDATA[12 articles: Churchill on tech doomerism, personal back offices, AI agents making calls, Ohio data center politics, model user demographics, AEO, Claude Code post-mortem, entrepreneurship as search, integrity in business, GPT-5 pricing explosion, Linear dogfooding]]></description>
+      <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-24/2026-04-24-briefing.mp3" length="15637568" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-24</guid>
+      <itunes:duration>00:16:17</itunes:duration>
+      <itunes:summary>12 articles: Churchill on tech doomerism, personal back offices, AI agents making calls, Ohio data center politics, model user demographics, AEO, Claude Code post-mortem, entrepreneurship as search, integrity in business, GPT-5 pricing explosion, Linear dogfooding</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 22, 2026</title>
       <description><![CDATA[10 articles: Amazon AI governance sprawl, Relay CEO customer service, Palantir's Technological Republic, Claude Cowork + RevenueCat, agent org architectures, engineering culture & HR liability, security landscape shift, AI hotel booking with Hoodmaps, Monologue Notes voice dictation, Anthropic pricing changes, Cal AI App Store enforcement, X Custom Timelines]]></description>
       <pubDate>Wed, 22 Apr 2026 00:00:00 +0000</pubDate>
