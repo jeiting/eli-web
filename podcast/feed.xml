@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 25th, 2026</title>
+      <description><![CDATA[9 articles: AI expectation inflation, Working by Caro, indie dev reality, iOS Simulator CLI, congressional trading enforcement theater, cofounder dynamics, GitHub merge queue disaster, AI consulting gold rush]]></description>
+      <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-25/2026-04-25-briefing.mp3" length="27917627" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-25</guid>
+      <itunes:duration>00:29:04</itunes:duration>
+      <itunes:summary>9 articles: AI expectation inflation, Working by Caro, indie dev reality, iOS Simulator CLI, congressional trading enforcement theater, cofounder dynamics, GitHub merge queue disaster, AI consulting gold rush</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 24, 2026</title>
       <description><![CDATA[12 articles: Churchill on tech doomerism, personal back offices, AI agents making calls, Ohio data center politics, model user demographics, AEO, Claude Code post-mortem, entrepreneurship as search, integrity in business, GPT-5 pricing explosion, Linear dogfooding]]></description>
       <pubDate>Fri, 24 Apr 2026 00:00:00 +0000</pubDate>
