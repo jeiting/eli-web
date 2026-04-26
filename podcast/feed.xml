@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 26, 2026</title>
+      <description><![CDATA[Ohio data centers and the AI narrative fight]]></description>
+      <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-26/2026-04-26-briefing.mp3" length="5576037" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-26</guid>
+      <itunes:duration>00:05:48</itunes:duration>
+      <itunes:summary>Ohio data centers and the AI narrative fight</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 25th, 2026</title>
       <description><![CDATA[9 articles: AI expectation inflation, Working by Caro, indie dev reality, iOS Simulator CLI, congressional trading enforcement theater, cofounder dynamics, GitHub merge queue disaster, AI consulting gold rush]]></description>
       <pubDate>Sat, 25 Apr 2026 00:00:00 +0000</pubDate>
