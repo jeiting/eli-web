@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 27, 2026</title>
+      <description><![CDATA[7 pieces: Ohio data centers and AI infrastructure opposition, founder pivot psychology (Tibo Maker), AI coding skepticism (Gergely Orosz), sub-2hr marathon shoe tech, GBrain hybrid search architecture (Garry Tan), AGI work paradox (Sam Altman), Roger Bannister's leather shoes]]></description>
+      <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-27/2026-04-27-briefing.mp3" length="11631848" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-27</guid>
+      <itunes:duration>00:12:06</itunes:duration>
+      <itunes:summary>7 pieces: Ohio data centers and AI infrastructure opposition, founder pivot psychology (Tibo Maker), AI coding skepticism (Gergely Orosz), sub-2hr marathon shoe tech, GBrain hybrid search architecture (Garry Tan), AGI work paradox (Sam Altman), Roger Bannister&apos;s leather shoes</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 26, 2026</title>
       <description><![CDATA[Ohio data centers and the AI narrative fight]]></description>
       <pubDate>Sun, 26 Apr 2026 00:00:00 +0000</pubDate>
