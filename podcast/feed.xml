@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 28, 2026</title>
+      <description><![CDATA[Wage theft vs petty crime, Apple Small Business cliff problem, AI-powered sales forecasting, and college vs startups]]></description>
+      <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-28/2026-04-28-briefing.mp3" length="9483537" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-28</guid>
+      <itunes:duration>00:09:52</itunes:duration>
+      <itunes:summary>Wage theft vs petty crime, Apple Small Business cliff problem, AI-powered sales forecasting, and college vs startups</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 27, 2026</title>
       <description><![CDATA[7 pieces: Ohio data centers and AI infrastructure opposition, founder pivot psychology (Tibo Maker), AI coding skepticism (Gergely Orosz), sub-2hr marathon shoe tech, GBrain hybrid search architecture (Garry Tan), AGI work paradox (Sam Altman), Roger Bannister's leather shoes]]></description>
       <pubDate>Mon, 27 Apr 2026 00:00:00 +0000</pubDate>
