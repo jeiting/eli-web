@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — April 30th, 2026</title>
+      <description><![CDATA[Palmer Luckey origin story, Jason Levin's keyboard hack, Carmack cruise ship elevators, Paul Tudor Jones on liquidity, Opus 4.7 critique, corporate AI hunger games, Stripe network effects, mobile app growth playbook]]></description>
+      <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-04-30/2026-04-30-briefing.mp3" length="14392886" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-04-30</guid>
+      <itunes:duration>00:14:59</itunes:duration>
+      <itunes:summary>Palmer Luckey origin story, Jason Levin&apos;s keyboard hack, Carmack cruise ship elevators, Paul Tudor Jones on liquidity, Opus 4.7 critique, corporate AI hunger games, Stripe network effects, mobile app growth playbook</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 28, 2026</title>
       <description><![CDATA[Wage theft vs petty crime, Apple Small Business cliff problem, AI-powered sales forecasting, and college vs startups]]></description>
       <pubDate>Tue, 28 Apr 2026 00:00:00 +0000</pubDate>
