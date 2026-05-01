@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 1st, 2026</title>
+      <description><![CDATA[9 articles: Founder imposter syndrome & visualization, coaching vs micromanagement, forward deployed engineers, AI coding models, VC language, Gemini IX crash lessons, Sam Altman investigation, LLM wikis, userland text rendering]]></description>
+      <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-01/2026-05-01-briefing.mp3" length="15182829" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-01</guid>
+      <itunes:duration>00:15:48</itunes:duration>
+      <itunes:summary>9 articles: Founder imposter syndrome &amp; visualization, coaching vs micromanagement, forward deployed engineers, AI coding models, VC language, Gemini IX crash lessons, Sam Altman investigation, LLM wikis, userland text rendering</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — April 30th, 2026</title>
       <description><![CDATA[Palmer Luckey origin story, Jason Levin's keyboard hack, Carmack cruise ship elevators, Paul Tudor Jones on liquidity, Opus 4.7 critique, corporate AI hunger games, Stripe network effects, mobile app growth playbook]]></description>
       <pubDate>Thu, 30 Apr 2026 00:00:00 +0000</pubDate>
