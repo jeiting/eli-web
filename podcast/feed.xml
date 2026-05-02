@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 2, 2026</title>
+      <description><![CDATA[6 pieces: Enrollment management confession, customer respect (PG), mining 80s/90s journalism, age compression in senior roles, Starlink product narrative, Jensen on AI doomers]]></description>
+      <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-02/2026-05-02-briefing.mp3" length="11419524" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-02</guid>
+      <itunes:duration>00:11:53</itunes:duration>
+      <itunes:summary>6 pieces: Enrollment management confession, customer respect (PG), mining 80s/90s journalism, age compression in senior roles, Starlink product narrative, Jensen on AI doomers</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 1st, 2026</title>
       <description><![CDATA[9 articles: Founder imposter syndrome & visualization, coaching vs micromanagement, forward deployed engineers, AI coding models, VC language, Gemini IX crash lessons, Sam Altman investigation, LLM wikis, userland text rendering]]></description>
       <pubDate>Fri, 01 May 2026 00:00:00 +0000</pubDate>
