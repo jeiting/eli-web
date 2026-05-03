@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 3, 2026</title>
+      <description><![CDATA[7 articles: Company scaling & accountability (Peer Richelsen), SharkNinja AI HackWeek, vibe coding vs SaaS (Jason Lemkin), APIs & reproducibility, AI agent banking (Meow), stablecoin wallets (Brian Armstrong), AI economics breakdown (Ed Zitron)]]></description>
+      <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-03/2026-05-03-briefing.mp3" length="44697017" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-03</guid>
+      <itunes:duration>00:46:33</itunes:duration>
+      <itunes:summary>7 articles: Company scaling &amp; accountability (Peer Richelsen), SharkNinja AI HackWeek, vibe coding vs SaaS (Jason Lemkin), APIs &amp; reproducibility, AI agent banking (Meow), stablecoin wallets (Brian Armstrong), AI economics breakdown (Ed Zitron)</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 2, 2026</title>
       <description><![CDATA[6 pieces: Enrollment management confession, customer respect (PG), mining 80s/90s journalism, age compression in senior roles, Starlink product narrative, Jensen on AI doomers]]></description>
       <pubDate>Sat, 02 May 2026 00:00:00 +0000</pubDate>
