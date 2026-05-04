@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 4th, 2026</title>
+      <description><![CDATA[4 articles: Josh Pigford's 72-hour shipping list, mobile app market data (258 new apps hit 100K+ downloads), Cal.com's mission over features, keeping agents running with MacBook lid closed]]></description>
+      <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-04/2026-05-04-briefing.mp3" length="7525817" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-04</guid>
+      <itunes:duration>00:07:50</itunes:duration>
+      <itunes:summary>4 articles: Josh Pigford&apos;s 72-hour shipping list, mobile app market data (258 new apps hit 100K+ downloads), Cal.com&apos;s mission over features, keeping agents running with MacBook lid closed</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 3, 2026</title>
       <description><![CDATA[7 articles: Company scaling & accountability (Peer Richelsen), SharkNinja AI HackWeek, vibe coding vs SaaS (Jason Lemkin), APIs & reproducibility, AI agent banking (Meow), stablecoin wallets (Brian Armstrong), AI economics breakdown (Ed Zitron)]]></description>
       <pubDate>Sun, 03 May 2026 00:00:00 +0000</pubDate>
