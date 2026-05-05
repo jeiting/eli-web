@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 5th, 2026</title>
+      <description><![CDATA[7 articles: Europe's garage problem (Paul Graham), H100 pricing defies depreciation, SaaS pricing vs salaries, PostHog's LLM trace costs, enterprise AI agent deployment (Aaron Levie), SaaStr's $254/mo AI VPs (Jason Lemkin), Panthalassa's ocean data centers, and Jack Clark's RSI prediction]]></description>
+      <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-05/2026-05-05-briefing.mp3" length="10130120" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-05</guid>
+      <itunes:duration>00:10:33</itunes:duration>
+      <itunes:summary>7 articles: Europe&apos;s garage problem (Paul Graham), H100 pricing defies depreciation, SaaS pricing vs salaries, PostHog&apos;s LLM trace costs, enterprise AI agent deployment (Aaron Levie), SaaStr&apos;s $254/mo AI VPs (Jason Lemkin), Panthalassa&apos;s ocean data centers, and Jack Clark&apos;s RSI prediction</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 4th, 2026</title>
       <description><![CDATA[4 articles: Josh Pigford's 72-hour shipping list, mobile app market data (258 new apps hit 100K+ downloads), Cal.com's mission over features, keeping agents running with MacBook lid closed]]></description>
       <pubDate>Mon, 04 May 2026 00:00:00 +0000</pubDate>
