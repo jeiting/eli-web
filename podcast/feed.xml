@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 6, 2026</title>
+      <description><![CDATA[6 pieces: Context carrying in hiring (Cal.com), Day 0 trial churn (RevenueCat), agent adoption framework, SaaS AI tailwinds, Codex CLI, and talent investing]]></description>
+      <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-06/2026-05-06-briefing.mp3" length="17524236" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-06</guid>
+      <itunes:duration>00:18:15</itunes:duration>
+      <itunes:summary>6 pieces: Context carrying in hiring (Cal.com), Day 0 trial churn (RevenueCat), agent adoption framework, SaaS AI tailwinds, Codex CLI, and talent investing</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 5th, 2026</title>
       <description><![CDATA[7 articles: Europe's garage problem (Paul Graham), H100 pricing defies depreciation, SaaS pricing vs salaries, PostHog's LLM trace costs, enterprise AI agent deployment (Aaron Levie), SaaStr's $254/mo AI VPs (Jason Lemkin), Panthalassa's ocean data centers, and Jack Clark's RSI prediction]]></description>
       <pubDate>Tue, 05 May 2026 00:00:00 +0000</pubDate>
