@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 7th, 2026</title>
+      <description><![CDATA[8 items: hiring fraud epidemic, AI agent hardware limits, hardware jailbreaking, startup timing paradox, agentic compute, Anthropic's $380B deals, FFmpeg/VLC deep dive, Bowlero antitrust lawsuit]]></description>
+      <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-07/2026-05-07-briefing.mp3" length="11700393" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-07</guid>
+      <itunes:duration>00:12:11</itunes:duration>
+      <itunes:summary>8 items: hiring fraud epidemic, AI agent hardware limits, hardware jailbreaking, startup timing paradox, agentic compute, Anthropic&apos;s $380B deals, FFmpeg/VLC deep dive, Bowlero antitrust lawsuit</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 6, 2026</title>
       <description><![CDATA[6 pieces: Context carrying in hiring (Cal.com), Day 0 trial churn (RevenueCat), agent adoption framework, SaaS AI tailwinds, Codex CLI, and talent investing]]></description>
       <pubDate>Wed, 06 May 2026 00:00:00 +0000</pubDate>
