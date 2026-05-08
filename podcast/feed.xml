@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 8, 2026</title>
+      <description><![CDATA[3 pieces: Danny Postma on quitting Twitter, Peer Richelsen on traditional SaaS vs AI hype, Nathan Baschez on AI-age development]]></description>
+      <pubDate>Fri, 08 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-08/2026-05-08-briefing.mp3" length="6276119" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-08</guid>
+      <itunes:duration>00:06:32</itunes:duration>
+      <itunes:summary>3 pieces: Danny Postma on quitting Twitter, Peer Richelsen on traditional SaaS vs AI hype, Nathan Baschez on AI-age development</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 7th, 2026</title>
       <description><![CDATA[8 items: hiring fraud epidemic, AI agent hardware limits, hardware jailbreaking, startup timing paradox, agentic compute, Anthropic's $380B deals, FFmpeg/VLC deep dive, Bowlero antitrust lawsuit]]></description>
       <pubDate>Thu, 07 May 2026 00:00:00 +0000</pubDate>
