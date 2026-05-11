@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 11, 2026</title>
+      <description><![CDATA[6 articles: AI vs Automation, Claude Code as Personal OS, Screen Size & MRR, Bootstrapped Founder vs VC-Backed Startup, Anthropic Eliminates Claude Blackmail, Modern ASO Strategy]]></description>
+      <pubDate>Mon, 11 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-11/2026-05-11-briefing.mp3" length="6418643" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-11</guid>
+      <itunes:duration>00:06:41</itunes:duration>
+      <itunes:summary>6 articles: AI vs Automation, Claude Code as Personal OS, Screen Size &amp; MRR, Bootstrapped Founder vs VC-Backed Startup, Anthropic Eliminates Claude Blackmail, Modern ASO Strategy</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 10, 2026</title>
       <description><![CDATA[3 articles: Process vs Trust (Peer Richelsen), Finding Fulfillment (Jason Cohen), AI Adoption Lag (Elad Gil)]]></description>
       <pubDate>Sun, 10 May 2026 00:00:00 +0000</pubDate>
