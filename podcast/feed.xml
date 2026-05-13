@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 13, 2026</title>
+      <description><![CDATA[9 articles: SpaceX satellites, AI delivery fraud, SF tech culture, Codex production deploys, InstaAgent growth, Apple Ads scaling, subscription tactics, agent security]]></description>
+      <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-13/2026-05-13-briefing.mp3" length="9354388" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-13</guid>
+      <itunes:duration>00:09:44</itunes:duration>
+      <itunes:summary>9 articles: SpaceX satellites, AI delivery fraud, SF tech culture, Codex production deploys, InstaAgent growth, Apple Ads scaling, subscription tactics, agent security</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 12, 2026</title>
       <description><![CDATA[8 articles: Customer focus over competitor chasing (peer_rich), VPS workflow for Claude Code (levelsio), doing the hard work before automating (melodyskim), cognitive biases in leadership (Alfred Lin), Gemini Flash economics (bindureddy), AI-native at WorkOS (grinich), devastating satire on tech layoffs and narrative yield (gothburz), and how 'I am' affirmations app makes $400K/mo (matteo_spada)]]></description>
       <pubDate>Tue, 12 May 2026 00:00:00 +0000</pubDate>
