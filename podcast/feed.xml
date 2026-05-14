@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 14, 2026</title>
+      <description><![CDATA[8 articles: Life360 referral failure, Cal.com building in public, viral video tricks, Microsoft GPU investigation, Claude usage policy, app2web economics, HubSpot employee story, deep CS expertise in AI age]]></description>
+      <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-14/2026-05-14-briefing.mp3" length="11135312" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-14</guid>
+      <itunes:duration>00:11:35</itunes:duration>
+      <itunes:summary>8 articles: Life360 referral failure, Cal.com building in public, viral video tricks, Microsoft GPU investigation, Claude usage policy, app2web economics, HubSpot employee story, deep CS expertise in AI age</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 13, 2026</title>
       <description><![CDATA[9 articles: SpaceX satellites, AI delivery fraud, SF tech culture, Codex production deploys, InstaAgent growth, Apple Ads scaling, subscription tactics, agent security]]></description>
       <pubDate>Wed, 13 May 2026 00:00:00 +0000</pubDate>
