@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 18, 2026</title>
+      <description><![CDATA[11 articles: Notion Developer Platform, Zapier AI redesign, aviation ATC funding, Klarna Q1 results, ASA competitive bidding ethics, Bun stability at scale, app exit mindset, YC on AI agents, Cerebras on inference speed, Brian Roemmele origin story, subscription pricing strategy]]></description>
+      <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-18/2026-05-18-briefing.mp3" length="23611812" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-18</guid>
+      <itunes:duration>00:24:35</itunes:duration>
+      <itunes:summary>11 articles: Notion Developer Platform, Zapier AI redesign, aviation ATC funding, Klarna Q1 results, ASA competitive bidding ethics, Bun stability at scale, app exit mindset, YC on AI agents, Cerebras on inference speed, Brian Roemmele origin story, subscription pricing strategy</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 14, 2026</title>
       <description><![CDATA[8 articles: Life360 referral failure, Cal.com building in public, viral video tricks, Microsoft GPU investigation, Claude usage policy, app2web economics, HubSpot employee story, deep CS expertise in AI age]]></description>
       <pubDate>Thu, 14 May 2026 00:00:00 +0000</pubDate>
