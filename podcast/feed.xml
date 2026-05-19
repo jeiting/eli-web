@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 19, 2026</title>
+      <description><![CDATA[3 tweets: Cal.com transparency, PMF vs dysfunction, App Store featuring vs revenue]]></description>
+      <pubDate>Tue, 19 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-19/2026-05-19-briefing.mp3" length="2451792" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-19</guid>
+      <itunes:duration>00:02:33</itunes:duration>
+      <itunes:summary>3 tweets: Cal.com transparency, PMF vs dysfunction, App Store featuring vs revenue</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 18, 2026</title>
       <description><![CDATA[11 articles: Notion Developer Platform, Zapier AI redesign, aviation ATC funding, Klarna Q1 results, ASA competitive bidding ethics, Bun stability at scale, app exit mindset, YC on AI agents, Cerebras on inference speed, Brian Roemmele origin story, subscription pricing strategy]]></description>
       <pubDate>Mon, 18 May 2026 00:00:00 +0000</pubDate>
