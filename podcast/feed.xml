@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — May 24, 2026</title>
+      <description><![CDATA[6 pieces on platform mechanics, engineering principles, dogfooding, and data visualization: Nikita Bier on content platform essentials and combating content theft, Elon's 5 rules for engineering (question requirements, delete ruthlessly, then optimize), Brian Anglin on dogfooding Superwall, David Senra's Rick Rubin interview preview, and Anjney Midha on Bertin's data viz work]]></description>
+      <pubDate>Sun, 24 May 2026 00:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-24/2026-05-24-briefing.mp3" length="7256233" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-24</guid>
+      <itunes:duration>00:07:33</itunes:duration>
+      <itunes:summary>6 pieces on platform mechanics, engineering principles, dogfooding, and data visualization: Nikita Bier on content platform essentials and combating content theft, Elon&apos;s 5 rules for engineering (question requirements, delete ruthlessly, then optimize), Brian Anglin on dogfooding Superwall, David Senra&apos;s Rick Rubin interview preview, and Anjney Midha on Bertin&apos;s data viz work</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 23, 2026</title>
       <description><![CDATA[11 articles: Sir Jim Ratcliffe's 0B empire, Google's Antigravity blooper, enterprise AI tokenmaxxing trap, GCP's suspension nightmare, subscription dark patterns debate, AI scaling insights, trial length analysis, vibe-coded apps]]></description>
       <pubDate>Sat, 23 May 2026 00:00:00 +0000</pubDate>
