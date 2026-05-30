@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing - May 30, 2026</title>
+      <description><![CDATA[4 items: BitePal growth teardown, continual learning, AI intelligence substrates, AI investing mania]]></description>
+      <pubDate>Sat, 30 May 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-30/2026-05-30-briefing.mp3" length="2890649" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-30</guid>
+      <itunes:duration>00:03:00</itunes:duration>
+      <itunes:summary>4 items: BitePal growth teardown, continual learning, AI intelligence substrates, AI investing mania</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — May 25, 2026</title>
       <description><![CDATA[9 articles: anxiety research, music as avoidance, Viktor AI employee ($75M), Apple privacy push, solo founder with AI agents, backup strategies, brand engineering, Nivi's LLM prompt, McKinsey outcome-based pricing, Cognition's hypergrowth]]></description>
       <pubDate>Mon, 25 May 2026 00:00:00 +0000</pubDate>
