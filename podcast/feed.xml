@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing - May 31, 2026</title>
+      <description><![CDATA[6 items: freemium retention, multi-touch attribution, push-up app ASO, PolyRange benchmark design, Opus 4.8 behavior, Opus 4.8 vs GPT-5.5 benchmarks]]></description>
+      <pubDate>Sun, 31 May 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-05-31/2026-05-31-briefing.mp3" length="7818806" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-05-31</guid>
+      <itunes:duration>00:08:08</itunes:duration>
+      <itunes:summary>6 items: freemium retention, multi-touch attribution, push-up app ASO, PolyRange benchmark design, Opus 4.8 behavior, Opus 4.8 vs GPT-5.5 benchmarks</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing - May 30, 2026</title>
       <description><![CDATA[4 items: BitePal growth teardown, continual learning, AI intelligence substrates, AI investing mania]]></description>
       <pubDate>Sat, 30 May 2026 06:00:00 +0000</pubDate>
