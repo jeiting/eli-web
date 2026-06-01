@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — June 1, 2026</title>
+      <description><![CDATA[8 readings: Boeing MAX 7 and MAX 10 certification, Marc Lou May revenue, Corgi Insurance intensity culture, American descent turbulence procedures, Spirit Airlines collapse, Alex Nguyen app revenue, Andrew B2C revenue, Kyan pricing experiment]]></description>
+      <pubDate>Mon, 01 Jun 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-06-01/2026-06-01-briefing.mp3" length="10084981" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-06-01</guid>
+      <itunes:duration>00:10:30</itunes:duration>
+      <itunes:summary>8 readings: Boeing MAX 7 and MAX 10 certification, Marc Lou May revenue, Corgi Insurance intensity culture, American descent turbulence procedures, Spirit Airlines collapse, Alex Nguyen app revenue, Andrew B2C revenue, Kyan pricing experiment</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing - May 31, 2026</title>
       <description><![CDATA[6 items: freemium retention, multi-touch attribution, push-up app ASO, PolyRange benchmark design, Opus 4.8 behavior, Opus 4.8 vs GPT-5.5 benchmarks]]></description>
       <pubDate>Sun, 31 May 2026 06:00:00 +0000</pubDate>
