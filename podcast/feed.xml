@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — June 2, 2026</title>
+      <description><![CDATA[10 items: LATAM 787 stranded on Easter Island, organic distribution laws, Andrew Warner on social metrics, Southwest BOS-SAN route, Linear Team Docs, consumer app founder timeline, LTSE and Eric Ries, American Airlines downgrade refunds, customer email deliverability, solar installation startups]]></description>
+      <pubDate>Tue, 02 Jun 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-06-02/2026-06-02-briefing.mp3" length="10798855" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-06-02</guid>
+      <itunes:duration>00:11:15</itunes:duration>
+      <itunes:summary>10 items: LATAM 787 stranded on Easter Island, organic distribution laws, Andrew Warner on social metrics, Southwest BOS-SAN route, Linear Team Docs, consumer app founder timeline, LTSE and Eric Ries, American Airlines downgrade refunds, customer email deliverability, solar installation startups</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — June 1, 2026</title>
       <description><![CDATA[8 readings: Boeing MAX 7 and MAX 10 certification, Marc Lou May revenue, Corgi Insurance intensity culture, American descent turbulence procedures, Spirit Airlines collapse, Alex Nguyen app revenue, Andrew B2C revenue, Kyan pricing experiment]]></description>
       <pubDate>Mon, 01 Jun 2026 06:00:00 +0000</pubDate>
