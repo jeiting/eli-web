@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing — June 3, 2026</title>
+      <description><![CDATA[10 stashed tweets: app binary size, WHOOP reverse engineering, indie app revenue, VC board-room weirdness, Azul A330neos, AI token pricing, Notion.com, MC-21, Codex Sites platform take, SBF Anthropic litigation incentives]]></description>
+      <pubDate>Wed, 03 Jun 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-06-03/2026-06-03-briefing.mp3" length="12976422" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-06-03</guid>
+      <itunes:duration>00:13:31</itunes:duration>
+      <itunes:summary>10 stashed tweets: app binary size, WHOOP reverse engineering, indie app revenue, VC board-room weirdness, Azul A330neos, AI token pricing, Notion.com, MC-21, Codex Sites platform take, SBF Anthropic litigation incentives</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — June 2, 2026</title>
       <description><![CDATA[10 items: LATAM 787 stranded on Easter Island, organic distribution laws, Andrew Warner on social metrics, Southwest BOS-SAN route, Linear Team Docs, consumer app founder timeline, LTSE and Eric Ries, American Airlines downgrade refunds, customer email deliverability, solar installation startups]]></description>
       <pubDate>Tue, 02 Jun 2026 06:00:00 +0000</pubDate>
