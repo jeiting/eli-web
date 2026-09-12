@@ -16,6 +16,15 @@
     <itunes:category text="Technology"/>
 <!-- EPISODES_START -->
 <item>
+      <title>Bookmark Briefing - September 12, 2026</title>
+      <description><![CDATA[1 article: Dominic Frisby tweet]]></description>
+      <pubDate>Sat, 12 Sep 2026 06:00:00 +0000</pubDate>
+      <enclosure url="https://github.com/jeiting/eli-web/releases/download/podcast-2026-09-12/2026-09-12-briefing.mp3" length="932928" type="audio/mpeg"/>
+      <guid isPermaLink="false">podcast-2026-09-12</guid>
+      <itunes:duration>00:00:58</itunes:duration>
+      <itunes:summary>1 article: Dominic Frisby tweet</itunes:summary>
+    </item>
+<item>
       <title>Bookmark Briefing — August 28, 2026</title>
       <description><![CDATA[78 stashed tweets: app monetization, AI adoption, developer tools, company-building, and platform policy.]]></description>
       <pubDate>Fri, 28 Aug 2026 06:00:00 +0000</pubDate>
